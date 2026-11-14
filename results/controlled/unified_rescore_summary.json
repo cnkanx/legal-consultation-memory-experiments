@@ -1,0 +1,235 @@
+{
+  "cases": 20,
+  "normalization_rules": {
+    "lease_status": {
+      "生效": "生效",
+      "已生效": "生效",
+      "解除": "解除",
+      "已解除": "解除"
+    },
+    "employment_status": {
+      "在职": "在职",
+      "已入职": "在职",
+      "离职": "离职",
+      "已离职": "离职"
+    },
+    "payment_status": {
+      "全部付款": "全部付款",
+      "已全部付款": "全部付款",
+      "全部支付": "全部付款",
+      "已履行": "全部付款",
+      "部分付款": "部分付款",
+      "部分支付": "部分付款",
+      "部分履行": "部分付款",
+      "未付款": "未付款",
+      "未支付": "未付款",
+      "未履行": "未付款"
+    },
+    "repayment_status": {
+      "已履行": "已履行",
+      "全部履行": "已履行",
+      "已还清": "已履行",
+      "全部还清": "已履行",
+      "已经全部还清": "已履行",
+      "部分履行": "部分履行",
+      "部分还款": "部分履行",
+      "还了一部分": "部分履行",
+      "未履行": "未履行",
+      "未还款": "未履行",
+      "没有履行": "未履行",
+      "没有还款": "未履行"
+    },
+    "supplemental_agreement": {
+      "未确认存在": "未确认存在",
+      "未见过": "未确认存在",
+      "没有见过": "未确认存在",
+      "可能存在": "未确认存在",
+      "可能签过": "未确认存在"
+    }
+  },
+  "runs": {
+    "mem0_deepseek": {
+      "strict_accuracy": 0.75,
+      "strict_by_query_type": {
+        "at_time": {
+          "correct": 3,
+          "total": 5,
+          "accuracy": 0.6
+        },
+        "current": {
+          "correct": 21,
+          "total": 28,
+          "accuracy": 0.75
+        },
+        "original": {
+          "correct": 9,
+          "total": 11,
+          "accuracy": 0.8181818181818182
+        }
+      },
+      "normalized_accuracy": 0.9090909090909091,
+      "normalized_by_query_type": {
+        "current": {
+          "correct": 25,
+          "total": 28,
+          "accuracy": 0.8928571428571429
+        },
+        "at_time": {
+          "correct": 4,
+          "total": 5,
+          "accuracy": 0.8
+        },
+        "original": {
+          "correct": 11,
+          "total": 11,
+          "accuracy": 1.0
+        }
+      },
+      "residual_errors": [
+        {
+          "query_id": "CM-006-Q1",
+          "query_type": "current",
+          "answer": "50000",
+          "actual": "UNKNOWN",
+          "normalized_actual": "UNKNOWN"
+        },
+        {
+          "query_id": "CM-012-Q2",
+          "query_type": "at_time",
+          "answer": "生效",
+          "actual": "已履行",
+          "normalized_actual": "已履行"
+        },
+        {
+          "query_id": "CM-015-Q1",
+          "query_type": "current",
+          "answer": "2024-07-01",
+          "actual": "UNKNOWN",
+          "normalized_actual": "UNKNOWN"
+        },
+        {
+          "query_id": "CM-016-Q1",
+          "query_type": "current",
+          "answer": "未履行",
+          "actual": "UNKNOWN",
+          "normalized_actual": "UNKNOWN"
+        }
+      ]
+    },
+    "mem0_oracle": {
+      "strict_accuracy": 0.9090909090909091,
+      "strict_by_query_type": {
+        "at_time": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "current": {
+          "correct": 25,
+          "total": 28,
+          "accuracy": 0.8928571428571429
+        },
+        "original": {
+          "correct": 10,
+          "total": 11,
+          "accuracy": 0.9090909090909091
+        }
+      },
+      "normalized_accuracy": 0.9545454545454546,
+      "normalized_by_query_type": {
+        "current": {
+          "correct": 26,
+          "total": 28,
+          "accuracy": 0.9285714285714286
+        },
+        "at_time": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "original": {
+          "correct": 11,
+          "total": 11,
+          "accuracy": 1.0
+        }
+      },
+      "residual_errors": [
+        {
+          "query_id": "CM-015-Q1",
+          "query_type": "current",
+          "answer": "2024-07-01",
+          "actual": "UNKNOWN",
+          "normalized_actual": "UNKNOWN"
+        },
+        {
+          "query_id": "CM-016-Q1",
+          "query_type": "current",
+          "answer": "未履行",
+          "actual": "UNKNOWN",
+          "normalized_actual": "UNKNOWN"
+        }
+      ]
+    },
+    "versioned_deepseek": {
+      "strict_accuracy": 0.7727272727272727,
+      "strict_by_query_type": {
+        "at_time": {
+          "correct": 2,
+          "total": 5,
+          "accuracy": 0.4
+        },
+        "current": {
+          "correct": 23,
+          "total": 28,
+          "accuracy": 0.8214285714285714
+        },
+        "original": {
+          "correct": 9,
+          "total": 11,
+          "accuracy": 0.8181818181818182
+        }
+      },
+      "normalized_accuracy": 0.9318181818181818,
+      "normalized_by_query_type": {
+        "current": {
+          "correct": 26,
+          "total": 28,
+          "accuracy": 0.9285714285714286
+        },
+        "at_time": {
+          "correct": 4,
+          "total": 5,
+          "accuracy": 0.8
+        },
+        "original": {
+          "correct": 11,
+          "total": 11,
+          "accuracy": 1.0
+        }
+      },
+      "residual_errors": [
+        {
+          "query_id": "CM-006-Q1",
+          "query_type": "current",
+          "answer": "50000",
+          "actual": "None",
+          "normalized_actual": "None"
+        },
+        {
+          "query_id": "CM-012-Q2",
+          "query_type": "at_time",
+          "answer": "生效",
+          "actual": "已履行",
+          "normalized_actual": "已履行"
+        },
+        {
+          "query_id": "CM-018-Q2",
+          "query_type": "current",
+          "answer": "8000",
+          "actual": "None",
+          "normalized_actual": "None"
+        }
+      ]
+    }
+  }
+}

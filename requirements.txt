@@ -1,0 +1,6 @@
+openai>=1.0
+mem0ai==2.2.1
+fastembed==0.9.1
+qdrant-client>=1.9
+jsonlines>=4.0
+

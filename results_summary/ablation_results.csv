@@ -1,0 +1,5 @@
+configuration,event_types,version_chain,query_routing,accuracy,delta_vs_full
+full,yes,yes,yes,1.0000,0.0000
+no_event_types,no,yes,yes,0.9091,-0.0909
+no_version_chain,yes,no,yes,1.0000,0.0000
+no_query_routing,yes,yes,no,0.9091,-0.0909

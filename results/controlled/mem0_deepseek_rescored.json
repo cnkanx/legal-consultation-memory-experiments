@@ -1,0 +1,3017 @@
+{
+  "run_id": "ccabb99b",
+  "collection_name": "mem0_baseline_ccabb99b",
+  "infer": true,
+  "top_k": 10,
+  "answer_mode": "llm",
+  "case_count": 20,
+  "overall_accuracy": 0.9090909090909091,
+  "by_query_type": {
+    "at_time": {
+      "correct": 4,
+      "total": 5,
+      "accuracy": 0.8
+    },
+    "current": {
+      "correct": 25,
+      "total": 28,
+      "accuracy": 0.8928571428571429
+    },
+    "original": {
+      "correct": 11,
+      "total": 11,
+      "accuracy": 1.0
+    }
+  },
+  "details": [
+    {
+      "case_id": "CM-001",
+      "query_id": "CM-001-Q1",
+      "query_type": "current",
+      "question": "当前剩余欠款是多少？",
+      "answer": "50000",
+      "actual": "50000元",
+      "actual_normalized": "50000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "ce467030-4fad-4f70-9de3-81df72cdeb69",
+          "memory": "User lent someone 80,000 yuan on January 1, 2025.",
+          "hash": "2579bb8e38fcbe21484847034598bcad",
+          "metadata": {
+            "case_id": "CM-001",
+            "event_id": "CM-001-E1",
+            "fact_key": "loan_amount",
+            "value": "80000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我在2025年1月1日借给对方8万元。"
+          },
+          "score": 0.4411562036735018,
+          "created_at": "2026-11-12T04:52:57.356212+00:00",
+          "updated_at": "2026-11-12T04:52:57.356212+00:00",
+          "user_id": "CM-001",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a388d758-6e3b-4097-9d53-827f79912ee6",
+          "memory": "The borrower repaid 30,000 yuan of the 80,000 yuan loan on March 1, 2025, leaving 50,000 yuan outstanding.",
+          "hash": "b430bec9ec2836c7a7de9b63d2ab202b",
+          "metadata": {
+            "case_id": "CM-001",
+            "event_id": "CM-001-E2",
+            "fact_key": "repaid_amount",
+            "value": "30000",
+            "event_type": "assert",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "对方在2025年3月1日已经还了3万元。"
+          },
+          "score": 0.43675909055262524,
+          "created_at": "2026-11-12T04:52:58.511023+00:00",
+          "updated_at": "2026-11-12T04:52:58.511023+00:00",
+          "user_id": "CM-001",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-001",
+      "query_id": "CM-001-Q2",
+      "query_type": "at_time",
+      "question": "截至2025年2月1日，记录的借款金额是多少？",
+      "answer": "80000",
+      "actual": "80000",
+      "actual_normalized": "80000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "ce467030-4fad-4f70-9de3-81df72cdeb69",
+          "memory": "User lent someone 80,000 yuan on January 1, 2025.",
+          "hash": "2579bb8e38fcbe21484847034598bcad",
+          "metadata": {
+            "case_id": "CM-001",
+            "event_id": "CM-001-E1",
+            "fact_key": "loan_amount",
+            "value": "80000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我在2025年1月1日借给对方8万元。"
+          },
+          "score": 0.44449907442777503,
+          "created_at": "2026-11-12T04:52:57.356212+00:00",
+          "updated_at": "2026-11-12T04:52:57.356212+00:00",
+          "user_id": "CM-001",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a388d758-6e3b-4097-9d53-827f79912ee6",
+          "memory": "The borrower repaid 30,000 yuan of the 80,000 yuan loan on March 1, 2025, leaving 50,000 yuan outstanding.",
+          "hash": "b430bec9ec2836c7a7de9b63d2ab202b",
+          "metadata": {
+            "case_id": "CM-001",
+            "event_id": "CM-001-E2",
+            "fact_key": "repaid_amount",
+            "value": "30000",
+            "event_type": "assert",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "对方在2025年3月1日已经还了3万元。"
+          },
+          "score": 0.40654513231668404,
+          "created_at": "2026-11-12T04:52:58.511023+00:00",
+          "updated_at": "2026-11-12T04:52:58.511023+00:00",
+          "user_id": "CM-001",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-001",
+      "query_id": "CM-001-Q3",
+      "query_type": "original",
+      "question": "最初陈述的借款金额是多少？",
+      "answer": "80000",
+      "actual": "80000",
+      "actual_normalized": "80000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "ce467030-4fad-4f70-9de3-81df72cdeb69",
+          "memory": "User lent someone 80,000 yuan on January 1, 2025.",
+          "hash": "2579bb8e38fcbe21484847034598bcad",
+          "metadata": {
+            "case_id": "CM-001",
+            "event_id": "CM-001-E1",
+            "fact_key": "loan_amount",
+            "value": "80000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我在2025年1月1日借给对方8万元。"
+          },
+          "score": 0.39699757913742506,
+          "created_at": "2026-11-12T04:52:57.356212+00:00",
+          "updated_at": "2026-11-12T04:52:57.356212+00:00",
+          "user_id": "CM-001",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a388d758-6e3b-4097-9d53-827f79912ee6",
+          "memory": "The borrower repaid 30,000 yuan of the 80,000 yuan loan on March 1, 2025, leaving 50,000 yuan outstanding.",
+          "hash": "b430bec9ec2836c7a7de9b63d2ab202b",
+          "metadata": {
+            "case_id": "CM-001",
+            "event_id": "CM-001-E2",
+            "fact_key": "repaid_amount",
+            "value": "30000",
+            "event_type": "assert",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "对方在2025年3月1日已经还了3万元。"
+          },
+          "score": 0.3896963751061344,
+          "created_at": "2026-11-12T04:52:58.511023+00:00",
+          "updated_at": "2026-11-12T04:52:58.511023+00:00",
+          "user_id": "CM-001",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-002",
+      "query_id": "CM-002-Q1",
+      "query_type": "current",
+      "question": "当前确认的合同签署日期是哪天？",
+      "answer": "2024-06-15",
+      "actual": "2024-06-15",
+      "actual_normalized": "2024-06-15",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "1d3e244f-454e-4c39-b55c-3671381263a3",
+          "memory": "User corrected the contract signing date: the contract was actually signed on June 15, 2024, not June 1, 2024 as previously stated",
+          "hash": "73fb45b8502c36c49d2ba27a2ecd2c53",
+          "metadata": {
+            "case_id": "CM-002",
+            "event_id": "CM-002-E2",
+            "fact_key": "contract_signed_date",
+            "value": "2024-06-15",
+            "event_type": "correct",
+            "event_time": "2024-06-15",
+            "recorded_time": "2026-02-01",
+            "source_excerpt": "合同实际是2024年6月15日签的"
+          },
+          "score": 0.5392873416994136,
+          "created_at": "2026-11-12T04:53:03.587241+00:00",
+          "updated_at": "2026-11-12T04:53:03.587241+00:00",
+          "user_id": "CM-002",
+          "attributed_to": "user"
+        },
+        {
+          "id": "8a10a0d1-85bb-4151-96ac-542e3a9af33d",
+          "memory": "User's contract was signed on June 1, 2024",
+          "hash": "b23645e893345befc9521b6b57a49e96",
+          "metadata": {
+            "case_id": "CM-002",
+            "event_id": "CM-002-E1",
+            "fact_key": "contract_signed_date",
+            "value": "2024-06-01",
+            "event_type": "assert",
+            "event_time": "2024-06-01",
+            "recorded_time": "2026-01-01",
+            "source_excerpt": "合同是2024年6月1日签的"
+          },
+          "score": 0.5096602653880538,
+          "created_at": "2026-11-12T04:53:02.827753+00:00",
+          "updated_at": "2026-11-12T04:53:02.827753+00:00",
+          "user_id": "CM-002",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-002",
+      "query_id": "CM-002-Q2",
+      "query_type": "original",
+      "question": "当事人最初陈述的签署日期是哪天？",
+      "answer": "2024-06-01",
+      "actual": "2024年6月1日",
+      "actual_normalized": "2024-06-01",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "1d3e244f-454e-4c39-b55c-3671381263a3",
+          "memory": "User corrected the contract signing date: the contract was actually signed on June 15, 2024, not June 1, 2024 as previously stated",
+          "hash": "73fb45b8502c36c49d2ba27a2ecd2c53",
+          "metadata": {
+            "case_id": "CM-002",
+            "event_id": "CM-002-E2",
+            "fact_key": "contract_signed_date",
+            "value": "2024-06-15",
+            "event_type": "correct",
+            "event_time": "2024-06-15",
+            "recorded_time": "2026-02-01",
+            "source_excerpt": "合同实际是2024年6月15日签的"
+          },
+          "score": 0.4864158195877453,
+          "created_at": "2026-11-12T04:53:03.587241+00:00",
+          "updated_at": "2026-11-12T04:53:03.587241+00:00",
+          "user_id": "CM-002",
+          "attributed_to": "user"
+        },
+        {
+          "id": "8a10a0d1-85bb-4151-96ac-542e3a9af33d",
+          "memory": "User's contract was signed on June 1, 2024",
+          "hash": "b23645e893345befc9521b6b57a49e96",
+          "metadata": {
+            "case_id": "CM-002",
+            "event_id": "CM-002-E1",
+            "fact_key": "contract_signed_date",
+            "value": "2024-06-01",
+            "event_type": "assert",
+            "event_time": "2024-06-01",
+            "recorded_time": "2026-01-01",
+            "source_excerpt": "合同是2024年6月1日签的"
+          },
+          "score": 0.4555130748798649,
+          "created_at": "2026-11-12T04:53:02.827753+00:00",
+          "updated_at": "2026-11-12T04:53:02.827753+00:00",
+          "user_id": "CM-002",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-003",
+      "query_id": "CM-003-Q1",
+      "query_type": "current",
+      "question": "当前履行状态是什么？",
+      "answer": "已履行",
+      "actual": "已履行",
+      "actual_normalized": "已履行",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "b2833ad9-48c8-4132-bd20-12a315f7afa2",
+          "memory": "As of February 1, 2025, the other party had repaid part of the amount owed, changing their repayment status from unfulfilled to partially fulfilled.",
+          "hash": "943714c7769b866ea596b4ce3fbd0f0f",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E2",
+            "fact_key": "repayment_status",
+            "value": "部分履行",
+            "event_type": "transition",
+            "event_time": "2025-02-01",
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "2025年2月1日对方还了一部分，所以现在是部分履行。"
+          },
+          "score": 0.4344020468806662,
+          "created_at": "2026-11-12T04:53:07.232154+00:00",
+          "updated_at": "2026-11-12T04:53:07.232154+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        },
+        {
+          "id": "2bd16f22-a622-4102-894a-f8a489f61b15",
+          "memory": "As of January 1, 2025, the other party had still not fulfilled their repayment obligation (repayment status: unfulfilled).",
+          "hash": "e4f47b1d56b5a6d5b2b48a8fab4819ce",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E1",
+            "fact_key": "repayment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "2025年1月1日时，对方仍未履行还款义务。"
+          },
+          "score": 0.42969518608643675,
+          "created_at": "2026-11-12T04:53:06.337970+00:00",
+          "updated_at": "2026-11-12T04:53:06.337970+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        },
+        {
+          "id": "fe47c259-6aa0-4f5d-8343-31e76d3a993a",
+          "memory": "As of March 1, 2025, the other party had fully repaid the entire amount owed, changing their repayment status from partially fulfilled to fully fulfilled.",
+          "hash": "b3cd1afdb1b4c9f13968985fbc0e7c51",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E3",
+            "fact_key": "repayment_status",
+            "value": "已履行",
+            "event_type": "transition",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年3月1日对方已经全部还清。"
+          },
+          "score": 0.41142879683841294,
+          "created_at": "2026-11-12T04:53:08.366163+00:00",
+          "updated_at": "2026-11-12T04:53:08.366163+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-003",
+      "query_id": "CM-003-Q2",
+      "query_type": "at_time",
+      "question": "2025年2月10日时履行状态是什么？",
+      "answer": "部分履行",
+      "actual": "部分履行",
+      "actual_normalized": "部分履行",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "b2833ad9-48c8-4132-bd20-12a315f7afa2",
+          "memory": "As of February 1, 2025, the other party had repaid part of the amount owed, changing their repayment status from unfulfilled to partially fulfilled.",
+          "hash": "943714c7769b866ea596b4ce3fbd0f0f",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E2",
+            "fact_key": "repayment_status",
+            "value": "部分履行",
+            "event_type": "transition",
+            "event_time": "2025-02-01",
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "2025年2月1日对方还了一部分，所以现在是部分履行。"
+          },
+          "score": 0.5119606571353155,
+          "created_at": "2026-11-12T04:53:07.232154+00:00",
+          "updated_at": "2026-11-12T04:53:07.232154+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        },
+        {
+          "id": "2bd16f22-a622-4102-894a-f8a489f61b15",
+          "memory": "As of January 1, 2025, the other party had still not fulfilled their repayment obligation (repayment status: unfulfilled).",
+          "hash": "e4f47b1d56b5a6d5b2b48a8fab4819ce",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E1",
+            "fact_key": "repayment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "2025年1月1日时，对方仍未履行还款义务。"
+          },
+          "score": 0.5087307477646648,
+          "created_at": "2026-11-12T04:53:06.337970+00:00",
+          "updated_at": "2026-11-12T04:53:06.337970+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        },
+        {
+          "id": "fe47c259-6aa0-4f5d-8343-31e76d3a993a",
+          "memory": "As of March 1, 2025, the other party had fully repaid the entire amount owed, changing their repayment status from partially fulfilled to fully fulfilled.",
+          "hash": "b3cd1afdb1b4c9f13968985fbc0e7c51",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E3",
+            "fact_key": "repayment_status",
+            "value": "已履行",
+            "event_type": "transition",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年3月1日对方已经全部还清。"
+          },
+          "score": 0.501081689496043,
+          "created_at": "2026-11-12T04:53:08.366163+00:00",
+          "updated_at": "2026-11-12T04:53:08.366163+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-003",
+      "query_id": "CM-003-Q3",
+      "query_type": "original",
+      "question": "最早记录的履行状态是什么？",
+      "answer": "未履行",
+      "actual": "未履行",
+      "actual_normalized": "未履行",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "b2833ad9-48c8-4132-bd20-12a315f7afa2",
+          "memory": "As of February 1, 2025, the other party had repaid part of the amount owed, changing their repayment status from unfulfilled to partially fulfilled.",
+          "hash": "943714c7769b866ea596b4ce3fbd0f0f",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E2",
+            "fact_key": "repayment_status",
+            "value": "部分履行",
+            "event_type": "transition",
+            "event_time": "2025-02-01",
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "2025年2月1日对方还了一部分，所以现在是部分履行。"
+          },
+          "score": 0.38598892550227276,
+          "created_at": "2026-11-12T04:53:07.232154+00:00",
+          "updated_at": "2026-11-12T04:53:07.232154+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        },
+        {
+          "id": "2bd16f22-a622-4102-894a-f8a489f61b15",
+          "memory": "As of January 1, 2025, the other party had still not fulfilled their repayment obligation (repayment status: unfulfilled).",
+          "hash": "e4f47b1d56b5a6d5b2b48a8fab4819ce",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E1",
+            "fact_key": "repayment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "2025年1月1日时，对方仍未履行还款义务。"
+          },
+          "score": 0.36900709620861877,
+          "created_at": "2026-11-12T04:53:06.337970+00:00",
+          "updated_at": "2026-11-12T04:53:06.337970+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        },
+        {
+          "id": "fe47c259-6aa0-4f5d-8343-31e76d3a993a",
+          "memory": "As of March 1, 2025, the other party had fully repaid the entire amount owed, changing their repayment status from partially fulfilled to fully fulfilled.",
+          "hash": "b3cd1afdb1b4c9f13968985fbc0e7c51",
+          "metadata": {
+            "case_id": "CM-003",
+            "event_id": "CM-003-E3",
+            "fact_key": "repayment_status",
+            "value": "已履行",
+            "event_type": "transition",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年3月1日对方已经全部还清。"
+          },
+          "score": 0.3644583894644578,
+          "created_at": "2026-11-12T04:53:08.366163+00:00",
+          "updated_at": "2026-11-12T04:53:08.366163+00:00",
+          "user_id": "CM-003",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-004",
+      "query_id": "CM-004-Q1",
+      "query_type": "current",
+      "question": "当事人当前主张的欠款金额是多少？",
+      "answer": "100000",
+      "actual": "100000元",
+      "actual_normalized": "100000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "3596e21a-cafe-472a-860e-4a4bf4c34278",
+          "memory": "User stated on January 5, 2025 that they had heard the other party may only owe 80,000 yuan (8万元), but noted they have no evidence to support this, expressing uncertainty about the claimed debt amount",
+          "hash": "73f595d38489274a40dd4a4dd0d9d436",
+          "metadata": {
+            "case_id": "CM-004",
+            "event_id": "CM-004-E2",
+            "fact_key": "claimed_debt_amount",
+            "value": "80000",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-01-05",
+            "source_excerpt": "我听说好像只欠8万元，但没有证据。"
+          },
+          "score": 0.5069722777651134,
+          "created_at": "2026-11-12T04:53:12.586302+00:00",
+          "updated_at": "2026-11-12T04:53:12.586302+00:00",
+          "user_id": "CM-004",
+          "attributed_to": "user"
+        },
+        {
+          "id": "c50e428d-5b7b-4026-970d-895440e4294a",
+          "memory": "User claims that the other party owes them 100,000 yuan (10万元), as asserted in a statement recorded on January 1, 2025",
+          "hash": "6a48f9d44526fcdb9682214f7e2dd914",
+          "metadata": {
+            "case_id": "CM-004",
+            "event_id": "CM-004-E1",
+            "fact_key": "claimed_debt_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我认为对方欠我10万元。"
+          },
+          "score": 0.4836457280452109,
+          "created_at": "2026-11-12T04:53:11.257752+00:00",
+          "updated_at": "2026-11-12T04:53:11.257752+00:00",
+          "user_id": "CM-004",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-004",
+      "query_id": "CM-004-Q2",
+      "query_type": "original",
+      "question": "当事人最初主张的欠款金额是多少？",
+      "answer": "100000",
+      "actual": "100000",
+      "actual_normalized": "100000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "3596e21a-cafe-472a-860e-4a4bf4c34278",
+          "memory": "User stated on January 5, 2025 that they had heard the other party may only owe 80,000 yuan (8万元), but noted they have no evidence to support this, expressing uncertainty about the claimed debt amount",
+          "hash": "73f595d38489274a40dd4a4dd0d9d436",
+          "metadata": {
+            "case_id": "CM-004",
+            "event_id": "CM-004-E2",
+            "fact_key": "claimed_debt_amount",
+            "value": "80000",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-01-05",
+            "source_excerpt": "我听说好像只欠8万元，但没有证据。"
+          },
+          "score": 0.4777721081584967,
+          "created_at": "2026-11-12T04:53:12.586302+00:00",
+          "updated_at": "2026-11-12T04:53:12.586302+00:00",
+          "user_id": "CM-004",
+          "attributed_to": "user"
+        },
+        {
+          "id": "c50e428d-5b7b-4026-970d-895440e4294a",
+          "memory": "User claims that the other party owes them 100,000 yuan (10万元), as asserted in a statement recorded on January 1, 2025",
+          "hash": "6a48f9d44526fcdb9682214f7e2dd914",
+          "metadata": {
+            "case_id": "CM-004",
+            "event_id": "CM-004-E1",
+            "fact_key": "claimed_debt_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我认为对方欠我10万元。"
+          },
+          "score": 0.4604213297886105,
+          "created_at": "2026-11-12T04:53:11.257752+00:00",
+          "updated_at": "2026-11-12T04:53:11.257752+00:00",
+          "user_id": "CM-004",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-005",
+      "query_id": "CM-005-Q1",
+      "query_type": "current",
+      "question": "当前记录的借款本金是多少？",
+      "answer": "100000",
+      "actual": "100000",
+      "actual_normalized": "100000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "1367cd33-4765-48a7-b3a1-c4aa18aacc24",
+          "memory": "The total contract amount is 100,000 (10万元), as stated on January 2, 2025",
+          "hash": "ebfed1a6cff0a9b7e9baa3f89d2c5d62",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E3",
+            "fact_key": "contract_total_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": "2025-01-02",
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "合同总金额是10万元。"
+          },
+          "score": 0.4413185490328788,
+          "created_at": "2026-11-12T04:53:16.507395+00:00",
+          "updated_at": "2026-11-12T04:53:16.507395+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        },
+        {
+          "id": "48243b6b-6049-43b5-b55e-51250d41ef82",
+          "memory": "The loan principal amount is 100,000 (10万元), as stated on January 1, 2025",
+          "hash": "0ffef95d26247501bfb4c711aa9ba7ae",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E1",
+            "fact_key": "loan_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "借款本金是10万元。"
+          },
+          "score": 0.4259336433487587,
+          "created_at": "2026-11-12T04:53:14.842718+00:00",
+          "updated_at": "2026-11-12T04:53:14.842718+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a5645861-a1f3-4991-aab1-9bc99ca824e8",
+          "memory": "User lives in District A (A区), as stated on January 1, 2025",
+          "hash": "ebb12391261066ac76f5c1f4fc1b648d",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E2",
+            "fact_key": "residence",
+            "value": "A区",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我住在A区。"
+          },
+          "score": 0.31712350667780226,
+          "created_at": "2026-11-12T04:53:15.854003+00:00",
+          "updated_at": "2026-11-12T04:53:15.854003+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-005",
+      "query_id": "CM-005-Q2",
+      "query_type": "current",
+      "question": "目前记录的居住区域是什么？",
+      "answer": "A区",
+      "actual": "A区",
+      "actual_normalized": "A区",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "a5645861-a1f3-4991-aab1-9bc99ca824e8",
+          "memory": "User lives in District A (A区), as stated on January 1, 2025",
+          "hash": "ebb12391261066ac76f5c1f4fc1b648d",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E2",
+            "fact_key": "residence",
+            "value": "A区",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我住在A区。"
+          },
+          "score": 0.47368653771727093,
+          "created_at": "2026-11-12T04:53:15.854003+00:00",
+          "updated_at": "2026-11-12T04:53:15.854003+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        },
+        {
+          "id": "1367cd33-4765-48a7-b3a1-c4aa18aacc24",
+          "memory": "The total contract amount is 100,000 (10万元), as stated on January 2, 2025",
+          "hash": "ebfed1a6cff0a9b7e9baa3f89d2c5d62",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E3",
+            "fact_key": "contract_total_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": "2025-01-02",
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "合同总金额是10万元。"
+          },
+          "score": 0.3251343855337323,
+          "created_at": "2026-11-12T04:53:16.507395+00:00",
+          "updated_at": "2026-11-12T04:53:16.507395+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        },
+        {
+          "id": "48243b6b-6049-43b5-b55e-51250d41ef82",
+          "memory": "The loan principal amount is 100,000 (10万元), as stated on January 1, 2025",
+          "hash": "0ffef95d26247501bfb4c711aa9ba7ae",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E1",
+            "fact_key": "loan_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "借款本金是10万元。"
+          },
+          "score": 0.29951964757724203,
+          "created_at": "2026-11-12T04:53:14.842718+00:00",
+          "updated_at": "2026-11-12T04:53:14.842718+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-005",
+      "query_id": "CM-005-Q3",
+      "query_type": "current",
+      "question": "当前记录的合同总金额是多少？",
+      "answer": "100000",
+      "actual": "100000",
+      "actual_normalized": "100000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "1367cd33-4765-48a7-b3a1-c4aa18aacc24",
+          "memory": "The total contract amount is 100,000 (10万元), as stated on January 2, 2025",
+          "hash": "ebfed1a6cff0a9b7e9baa3f89d2c5d62",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E3",
+            "fact_key": "contract_total_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": "2025-01-02",
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "合同总金额是10万元。"
+          },
+          "score": 0.4614520834221596,
+          "created_at": "2026-11-12T04:53:16.507395+00:00",
+          "updated_at": "2026-11-12T04:53:16.507395+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        },
+        {
+          "id": "48243b6b-6049-43b5-b55e-51250d41ef82",
+          "memory": "The loan principal amount is 100,000 (10万元), as stated on January 1, 2025",
+          "hash": "0ffef95d26247501bfb4c711aa9ba7ae",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E1",
+            "fact_key": "loan_amount",
+            "value": "100000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "借款本金是10万元。"
+          },
+          "score": 0.41887992404871155,
+          "created_at": "2026-11-12T04:53:14.842718+00:00",
+          "updated_at": "2026-11-12T04:53:14.842718+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a5645861-a1f3-4991-aab1-9bc99ca824e8",
+          "memory": "User lives in District A (A区), as stated on January 1, 2025",
+          "hash": "ebb12391261066ac76f5c1f4fc1b648d",
+          "metadata": {
+            "case_id": "CM-005",
+            "event_id": "CM-005-E2",
+            "fact_key": "residence",
+            "value": "A区",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我住在A区。"
+          },
+          "score": 0.32371363000408715,
+          "created_at": "2026-11-12T04:53:15.854003+00:00",
+          "updated_at": "2026-11-12T04:53:15.854003+00:00",
+          "user_id": "CM-005",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-006",
+      "query_id": "CM-006-Q1",
+      "query_type": "current",
+      "question": "当前记录的借款金额是多少？",
+      "answer": "50000",
+      "actual": "UNKNOWN",
+      "actual_normalized": "UNKNOWN",
+      "correct": false,
+      "retrieved": [
+        {
+          "id": "82de83bc-47e9-4d60-b89f-202cab589521",
+          "memory": "User agreed to repay a debt in full by June 1, 2025, as stated in an agreement recorded on March 1, 2025",
+          "hash": "4604299e6b7aba74bab406c19887a780",
+          "metadata": {
+            "case_id": "CM-006",
+            "event_id": "CM-006-E2",
+            "fact_key": "due_date",
+            "value": "2025-06-01",
+            "event_type": "assert",
+            "event_time": "2025-06-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年6月1日前"
+          },
+          "score": 0.4052759592937849,
+          "created_at": "2026-11-12T04:53:19.707523+00:00",
+          "updated_at": "2026-11-12T04:53:19.707523+00:00",
+          "user_id": "CM-006",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-006",
+      "query_id": "CM-006-Q2",
+      "query_type": "current",
+      "question": "约定的还款日期是哪天？",
+      "answer": "2025-06-01",
+      "actual": "2025年6月1日",
+      "actual_normalized": "2025-06-01",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "82de83bc-47e9-4d60-b89f-202cab589521",
+          "memory": "User agreed to repay a debt in full by June 1, 2025, as stated in an agreement recorded on March 1, 2025",
+          "hash": "4604299e6b7aba74bab406c19887a780",
+          "metadata": {
+            "case_id": "CM-006",
+            "event_id": "CM-006-E2",
+            "fact_key": "due_date",
+            "value": "2025-06-01",
+            "event_type": "assert",
+            "event_time": "2025-06-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年6月1日前"
+          },
+          "score": 0.403236171294281,
+          "created_at": "2026-11-12T04:53:19.707523+00:00",
+          "updated_at": "2026-11-12T04:53:19.707523+00:00",
+          "user_id": "CM-006",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-007",
+      "query_id": "CM-007-Q1",
+      "query_type": "current",
+      "question": "记录的入职日期是哪天？",
+      "answer": "2024-08-01",
+      "actual": "2024年8月1日",
+      "actual_normalized": "2024-08-01",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "9d6c764d-f285-4308-b2aa-9f1a8595d098",
+          "memory": "User started employment on August 1, 2024, as stated in their own record of the event.",
+          "hash": "19d679a27781c0a438b499215c162e2c",
+          "metadata": {
+            "case_id": "CM-007",
+            "event_id": "CM-007-E1",
+            "fact_key": "employment_start_date",
+            "value": "2024-08-01",
+            "event_type": "assert",
+            "event_time": "2024-08-01",
+            "recorded_time": "2024-08-01",
+            "source_excerpt": "我于2024年8月1日入职。"
+          },
+          "score": 0.48573001506847713,
+          "created_at": "2026-11-12T04:53:22.153221+00:00",
+          "updated_at": "2026-11-12T04:53:22.153221+00:00",
+          "user_id": "CM-007",
+          "attributed_to": "user"
+        },
+        {
+          "id": "752447c9-88fe-4f0c-a054-e44dc1310bc7",
+          "memory": "User's agreed monthly salary is 9,000 yuan, as stated in their employment record dated August 1, 2024",
+          "hash": "d0fc82670c0616fcb1876108d219526c",
+          "metadata": {
+            "case_id": "CM-007",
+            "event_id": "CM-007-E2",
+            "fact_key": "monthly_salary",
+            "value": "9000",
+            "event_type": "assert",
+            "event_time": "2024-08-01",
+            "recorded_time": "2024-08-01",
+            "source_excerpt": "约定月工资是9000元"
+          },
+          "score": 0.47974079943222503,
+          "created_at": "2026-11-12T04:53:23.421544+00:00",
+          "updated_at": "2026-11-12T04:53:23.421544+00:00",
+          "user_id": "CM-007",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-007",
+      "query_id": "CM-007-Q2",
+      "query_type": "current",
+      "question": "约定的月工资是多少？",
+      "answer": "9000",
+      "actual": "9000元",
+      "actual_normalized": "9000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "752447c9-88fe-4f0c-a054-e44dc1310bc7",
+          "memory": "User's agreed monthly salary is 9,000 yuan, as stated in their employment record dated August 1, 2024",
+          "hash": "d0fc82670c0616fcb1876108d219526c",
+          "metadata": {
+            "case_id": "CM-007",
+            "event_id": "CM-007-E2",
+            "fact_key": "monthly_salary",
+            "value": "9000",
+            "event_type": "assert",
+            "event_time": "2024-08-01",
+            "recorded_time": "2024-08-01",
+            "source_excerpt": "约定月工资是9000元"
+          },
+          "score": 0.4764845076488261,
+          "created_at": "2026-11-12T04:53:23.421544+00:00",
+          "updated_at": "2026-11-12T04:53:23.421544+00:00",
+          "user_id": "CM-007",
+          "attributed_to": "user"
+        },
+        {
+          "id": "9d6c764d-f285-4308-b2aa-9f1a8595d098",
+          "memory": "User started employment on August 1, 2024, as stated in their own record of the event.",
+          "hash": "19d679a27781c0a438b499215c162e2c",
+          "metadata": {
+            "case_id": "CM-007",
+            "event_id": "CM-007-E1",
+            "fact_key": "employment_start_date",
+            "value": "2024-08-01",
+            "event_type": "assert",
+            "event_time": "2024-08-01",
+            "recorded_time": "2024-08-01",
+            "source_excerpt": "我于2024年8月1日入职。"
+          },
+          "score": 0.3776538372775508,
+          "created_at": "2026-11-12T04:53:22.153221+00:00",
+          "updated_at": "2026-11-12T04:53:22.153221+00:00",
+          "user_id": "CM-007",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-008",
+      "query_id": "CM-008-Q1",
+      "query_type": "current",
+      "question": "当前记录的租房押金是多少？",
+      "answer": "6000",
+      "actual": "6000元",
+      "actual_normalized": "6000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "33d7d19f-e684-47b0-a7a6-464bc414f57e",
+          "memory": "User's rental deposit is 6000 yuan, as stated on January 1, 2025",
+          "hash": "b28c96018b9f5ea82265cc0936214952",
+          "metadata": {
+            "case_id": "CM-008",
+            "event_id": "CM-008-E1",
+            "fact_key": "rent_deposit",
+            "value": "6000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "租房押金是6000元。"
+          },
+          "score": 0.4283711520019581,
+          "created_at": "2026-11-12T04:53:26.496782+00:00",
+          "updated_at": "2026-11-12T04:53:26.496782+00:00",
+          "user_id": "CM-008",
+          "attributed_to": "user"
+        },
+        {
+          "id": "7116895d-8ac8-45de-8d62-a10b937df91c",
+          "memory": "User's monthly rent is 3000 yuan, as stated on January 1, 2025",
+          "hash": "a49c16e3791abed82e3253b2a10f5d41",
+          "metadata": {
+            "case_id": "CM-008",
+            "event_id": "CM-008-E2",
+            "fact_key": "monthly_rent",
+            "value": "3000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "每月租金是3000元"
+          },
+          "score": 0.40834537648292857,
+          "created_at": "2026-11-12T04:53:27.461825+00:00",
+          "updated_at": "2026-11-12T04:53:27.461825+00:00",
+          "user_id": "CM-008",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-008",
+      "query_id": "CM-008-Q2",
+      "query_type": "current",
+      "question": "当前记录的月租金是多少？",
+      "answer": "3000",
+      "actual": "3000元",
+      "actual_normalized": "3000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "33d7d19f-e684-47b0-a7a6-464bc414f57e",
+          "memory": "User's rental deposit is 6000 yuan, as stated on January 1, 2025",
+          "hash": "b28c96018b9f5ea82265cc0936214952",
+          "metadata": {
+            "case_id": "CM-008",
+            "event_id": "CM-008-E1",
+            "fact_key": "rent_deposit",
+            "value": "6000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "租房押金是6000元。"
+          },
+          "score": 0.42164740158831593,
+          "created_at": "2026-11-12T04:53:26.496782+00:00",
+          "updated_at": "2026-11-12T04:53:26.496782+00:00",
+          "user_id": "CM-008",
+          "attributed_to": "user"
+        },
+        {
+          "id": "7116895d-8ac8-45de-8d62-a10b937df91c",
+          "memory": "User's monthly rent is 3000 yuan, as stated on January 1, 2025",
+          "hash": "a49c16e3791abed82e3253b2a10f5d41",
+          "metadata": {
+            "case_id": "CM-008",
+            "event_id": "CM-008-E2",
+            "fact_key": "monthly_rent",
+            "value": "3000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "每月租金是3000元"
+          },
+          "score": 0.4181528869318746,
+          "created_at": "2026-11-12T04:53:27.461825+00:00",
+          "updated_at": "2026-11-12T04:53:27.461825+00:00",
+          "user_id": "CM-008",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-009",
+      "query_id": "CM-009-Q1",
+      "query_type": "current",
+      "question": "当前确认的借款金额是多少？",
+      "answer": "100000",
+      "actual": "100000",
+      "actual_normalized": "100000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "3e627e3e-20ec-4935-a9fb-7336d78a157b",
+          "memory": "User corrected the loan amount from 120,000 (12万元) to 100,000 (10万元) after checking the IOU (借条), recorded on December 10, 2024",
+          "hash": "75de787e5edbcd5f1340f92cdbc2b8d1",
+          "metadata": {
+            "case_id": "CM-009",
+            "event_id": "CM-009-E2",
+            "fact_key": "loan_amount",
+            "value": "100000",
+            "event_type": "correct",
+            "event_time": null,
+            "recorded_time": "2024-12-10",
+            "source_excerpt": "核对借条后我更正，借款金额是10万元。"
+          },
+          "score": 0.520565443353774,
+          "created_at": "2026-11-12T04:53:30.836342+00:00",
+          "updated_at": "2026-11-12T04:53:30.836342+00:00",
+          "user_id": "CM-009",
+          "attributed_to": "user"
+        },
+        {
+          "id": "808e0c94-da41-4176-8621-6b0b6a4c0b5e",
+          "memory": "User stated that the loan amount they initially mentioned was 120,000 (12万元), recorded on December 1, 2024",
+          "hash": "6a6a83de16632dbaac069d3706d034b4",
+          "metadata": {
+            "case_id": "CM-009",
+            "event_id": "CM-009-E1",
+            "fact_key": "loan_amount",
+            "value": "120000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2024-12-01",
+            "source_excerpt": "我一开始说借款是12万元。"
+          },
+          "score": 0.48005488789993084,
+          "created_at": "2026-11-12T04:53:29.532267+00:00",
+          "updated_at": "2026-11-12T04:53:29.532267+00:00",
+          "user_id": "CM-009",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-009",
+      "query_id": "CM-009-Q2",
+      "query_type": "original",
+      "question": "最初陈述的借款金额是多少？",
+      "answer": "120000",
+      "actual": "120000",
+      "actual_normalized": "120000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "3e627e3e-20ec-4935-a9fb-7336d78a157b",
+          "memory": "User corrected the loan amount from 120,000 (12万元) to 100,000 (10万元) after checking the IOU (借条), recorded on December 10, 2024",
+          "hash": "75de787e5edbcd5f1340f92cdbc2b8d1",
+          "metadata": {
+            "case_id": "CM-009",
+            "event_id": "CM-009-E2",
+            "fact_key": "loan_amount",
+            "value": "100000",
+            "event_type": "correct",
+            "event_time": null,
+            "recorded_time": "2024-12-10",
+            "source_excerpt": "核对借条后我更正，借款金额是10万元。"
+          },
+          "score": 0.5043206390414481,
+          "created_at": "2026-11-12T04:53:30.836342+00:00",
+          "updated_at": "2026-11-12T04:53:30.836342+00:00",
+          "user_id": "CM-009",
+          "attributed_to": "user"
+        },
+        {
+          "id": "808e0c94-da41-4176-8621-6b0b6a4c0b5e",
+          "memory": "User stated that the loan amount they initially mentioned was 120,000 (12万元), recorded on December 1, 2024",
+          "hash": "6a6a83de16632dbaac069d3706d034b4",
+          "metadata": {
+            "case_id": "CM-009",
+            "event_id": "CM-009-E1",
+            "fact_key": "loan_amount",
+            "value": "120000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2024-12-01",
+            "source_excerpt": "我一开始说借款是12万元。"
+          },
+          "score": 0.45655488541987177,
+          "created_at": "2026-11-12T04:53:29.532267+00:00",
+          "updated_at": "2026-11-12T04:53:29.532267+00:00",
+          "user_id": "CM-009",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-010",
+      "query_id": "CM-010-Q1",
+      "query_type": "current",
+      "question": "当前记录的开庭日期是哪天？",
+      "answer": "2025-04-15",
+      "actual": "2025年4月15日",
+      "actual_normalized": "2025-04-15",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "62320400-f0a5-4d00-9c91-1eee2b170ff5",
+          "memory": "A hearing date of April 10, 2025 was asserted, as recorded on March 1, 2025, with the original statement being that the court hearing date is April 10, 2025.",
+          "hash": "d038d00b78b21d122a08dcea5e7367bd",
+          "metadata": {
+            "case_id": "CM-010",
+            "event_id": "CM-010-E1",
+            "fact_key": "hearing_date",
+            "value": "2025-04-10",
+            "event_type": "assert",
+            "event_time": "2025-04-10",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "开庭日期是2025年4月10日。"
+          },
+          "score": 0.4774726030377273,
+          "created_at": "2026-11-12T04:53:33.222284+00:00",
+          "updated_at": "2026-11-12T04:53:33.222284+00:00",
+          "user_id": "CM-010",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a6b1789e-22d7-42f0-951a-b4c2ce7f17c9",
+          "memory": "The hearing date was corrected to April 15, 2025 (previously stated as April 10, 2025) after the user received a summons and realized the earlier date was wrong; correction recorded on March 5, 2025.",
+          "hash": "fa7a960e62c282971db612f3d1cc0f5c",
+          "metadata": {
+            "case_id": "CM-010",
+            "event_id": "CM-010-E2",
+            "fact_key": "hearing_date",
+            "value": "2025-04-15",
+            "event_type": "correct",
+            "event_time": "2025-04-15",
+            "recorded_time": "2025-03-05",
+            "source_excerpt": "开庭日期是4月15日"
+          },
+          "score": 0.45698276182688474,
+          "created_at": "2026-11-12T04:53:34.483831+00:00",
+          "updated_at": "2026-11-12T04:53:34.483831+00:00",
+          "user_id": "CM-010",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-010",
+      "query_id": "CM-010-Q2",
+      "query_type": "original",
+      "question": "最初陈述的开庭日期是哪天？",
+      "answer": "2025-04-10",
+      "actual": "2025年4月10日",
+      "actual_normalized": "2025-04-10",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "62320400-f0a5-4d00-9c91-1eee2b170ff5",
+          "memory": "A hearing date of April 10, 2025 was asserted, as recorded on March 1, 2025, with the original statement being that the court hearing date is April 10, 2025.",
+          "hash": "d038d00b78b21d122a08dcea5e7367bd",
+          "metadata": {
+            "case_id": "CM-010",
+            "event_id": "CM-010-E1",
+            "fact_key": "hearing_date",
+            "value": "2025-04-10",
+            "event_type": "assert",
+            "event_time": "2025-04-10",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "开庭日期是2025年4月10日。"
+          },
+          "score": 0.46643878276780815,
+          "created_at": "2026-11-12T04:53:33.222284+00:00",
+          "updated_at": "2026-11-12T04:53:33.222284+00:00",
+          "user_id": "CM-010",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a6b1789e-22d7-42f0-951a-b4c2ce7f17c9",
+          "memory": "The hearing date was corrected to April 15, 2025 (previously stated as April 10, 2025) after the user received a summons and realized the earlier date was wrong; correction recorded on March 5, 2025.",
+          "hash": "fa7a960e62c282971db612f3d1cc0f5c",
+          "metadata": {
+            "case_id": "CM-010",
+            "event_id": "CM-010-E2",
+            "fact_key": "hearing_date",
+            "value": "2025-04-15",
+            "event_type": "correct",
+            "event_time": "2025-04-15",
+            "recorded_time": "2025-03-05",
+            "source_excerpt": "开庭日期是4月15日"
+          },
+          "score": 0.45063700911690274,
+          "created_at": "2026-11-12T04:53:34.483831+00:00",
+          "updated_at": "2026-11-12T04:53:34.483831+00:00",
+          "user_id": "CM-010",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-011",
+      "query_id": "CM-011-Q1",
+      "query_type": "current",
+      "question": "当前确认的交付数量是多少？",
+      "answer": "800",
+      "actual": "800",
+      "actual_normalized": "800",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "2afcad6b-8854-498f-9230-76dc88b27596",
+          "memory": "The user corrected the delivered quantity of goods from 1000 to 800 units after checking the delivery note, recorded on February 5, 2025",
+          "hash": "db06197a98bc48330c4f43af4c68ec19",
+          "metadata": {
+            "case_id": "CM-011",
+            "event_id": "CM-011-E2",
+            "fact_key": "delivered_quantity",
+            "value": "800",
+            "event_type": "correct",
+            "event_time": null,
+            "recorded_time": "2025-02-05",
+            "source_excerpt": "实际是800件"
+          },
+          "score": 0.4663330885658261,
+          "created_at": "2026-11-12T04:53:37.985202+00:00",
+          "updated_at": "2026-11-12T04:53:37.985202+00:00",
+          "user_id": "CM-011",
+          "attributed_to": "user"
+        },
+        {
+          "id": "e14e69f2-df13-46c3-851a-c71e6ae36a2a",
+          "memory": "The counterparty received a total of 1000 units of goods, as recorded on February 1, 2025",
+          "hash": "a162facde707d2d4ee55e18fc2ca9ae9",
+          "metadata": {
+            "case_id": "CM-011",
+            "event_id": "CM-011-E1",
+            "fact_key": "delivered_quantity",
+            "value": "1000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "对方一共收到1000件货物"
+          },
+          "score": 0.4574075344078724,
+          "created_at": "2026-11-12T04:53:36.736680+00:00",
+          "updated_at": "2026-11-12T04:53:36.736680+00:00",
+          "user_id": "CM-011",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-011",
+      "query_id": "CM-011-Q2",
+      "query_type": "original",
+      "question": "最初陈述的交付数量是多少？",
+      "answer": "1000",
+      "actual": "1000",
+      "actual_normalized": "1000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "2afcad6b-8854-498f-9230-76dc88b27596",
+          "memory": "The user corrected the delivered quantity of goods from 1000 to 800 units after checking the delivery note, recorded on February 5, 2025",
+          "hash": "db06197a98bc48330c4f43af4c68ec19",
+          "metadata": {
+            "case_id": "CM-011",
+            "event_id": "CM-011-E2",
+            "fact_key": "delivered_quantity",
+            "value": "800",
+            "event_type": "correct",
+            "event_time": null,
+            "recorded_time": "2025-02-05",
+            "source_excerpt": "实际是800件"
+          },
+          "score": 0.44643437986623397,
+          "created_at": "2026-11-12T04:53:37.985202+00:00",
+          "updated_at": "2026-11-12T04:53:37.985202+00:00",
+          "user_id": "CM-011",
+          "attributed_to": "user"
+        },
+        {
+          "id": "e14e69f2-df13-46c3-851a-c71e6ae36a2a",
+          "memory": "The counterparty received a total of 1000 units of goods, as recorded on February 1, 2025",
+          "hash": "a162facde707d2d4ee55e18fc2ca9ae9",
+          "metadata": {
+            "case_id": "CM-011",
+            "event_id": "CM-011-E1",
+            "fact_key": "delivered_quantity",
+            "value": "1000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "对方一共收到1000件货物"
+          },
+          "score": 0.4250802326368144,
+          "created_at": "2026-11-12T04:53:36.736680+00:00",
+          "updated_at": "2026-11-12T04:53:36.736680+00:00",
+          "user_id": "CM-011",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-012",
+      "query_id": "CM-012-Q1",
+      "query_type": "current",
+      "question": "当前租赁状态是什么？",
+      "answer": "解除",
+      "actual": "已解除",
+      "actual_normalized": "解除",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "a89cb53b-fc0a-4670-9819-56644d71c932",
+          "memory": "User's lease agreement took effect on January 1, 2025, and the lease status is recorded as fulfilled (已履行).",
+          "hash": "72a4f666ee0120c4103839e7e4b4be61",
+          "metadata": {
+            "case_id": "CM-012",
+            "event_id": "CM-012-E1",
+            "fact_key": "lease_status",
+            "value": "已履行",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "租赁合同在2025年1月1日生效。"
+          },
+          "score": 0.31757769626196736,
+          "created_at": "2026-11-12T04:53:40.131412+00:00",
+          "updated_at": "2026-11-12T04:53:40.131412+00:00",
+          "user_id": "CM-012",
+          "attributed_to": "user"
+        },
+        {
+          "id": "bcc61804-1355-4ac2-9cf0-f3a62ec74741",
+          "memory": "The lease agreement was terminated by both parties on May 1, 2025, changing its status from fulfilled (已履行) to terminated/rescinded (已解除).",
+          "hash": "12a5409a6ecb9816238caa29f86f2562",
+          "metadata": {
+            "case_id": "CM-012",
+            "event_id": "CM-012-E2",
+            "fact_key": "lease_status",
+            "value": "已解除",
+            "event_type": "transition",
+            "event_time": "2025-05-01",
+            "recorded_time": "2025-05-01",
+            "source_excerpt": "双方在2025年5月1日解除租赁合同。"
+          },
+          "score": 0.303334442763733,
+          "created_at": "2026-11-12T04:53:41.123153+00:00",
+          "updated_at": "2026-11-12T04:53:41.123153+00:00",
+          "user_id": "CM-012",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-012",
+      "query_id": "CM-012-Q2",
+      "query_type": "at_time",
+      "question": "2025年4月1日时租赁状态是什么？",
+      "answer": "生效",
+      "actual": "已履行",
+      "actual_normalized": "已履行",
+      "correct": false,
+      "retrieved": [
+        {
+          "id": "a89cb53b-fc0a-4670-9819-56644d71c932",
+          "memory": "User's lease agreement took effect on January 1, 2025, and the lease status is recorded as fulfilled (已履行).",
+          "hash": "72a4f666ee0120c4103839e7e4b4be61",
+          "metadata": {
+            "case_id": "CM-012",
+            "event_id": "CM-012-E1",
+            "fact_key": "lease_status",
+            "value": "已履行",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "租赁合同在2025年1月1日生效。"
+          },
+          "score": 0.420629164574681,
+          "created_at": "2026-11-12T04:53:40.131412+00:00",
+          "updated_at": "2026-11-12T04:53:40.131412+00:00",
+          "user_id": "CM-012",
+          "attributed_to": "user"
+        },
+        {
+          "id": "bcc61804-1355-4ac2-9cf0-f3a62ec74741",
+          "memory": "The lease agreement was terminated by both parties on May 1, 2025, changing its status from fulfilled (已履行) to terminated/rescinded (已解除).",
+          "hash": "12a5409a6ecb9816238caa29f86f2562",
+          "metadata": {
+            "case_id": "CM-012",
+            "event_id": "CM-012-E2",
+            "fact_key": "lease_status",
+            "value": "已解除",
+            "event_type": "transition",
+            "event_time": "2025-05-01",
+            "recorded_time": "2025-05-01",
+            "source_excerpt": "双方在2025年5月1日解除租赁合同。"
+          },
+          "score": 0.3916341850114305,
+          "created_at": "2026-11-12T04:53:41.123153+00:00",
+          "updated_at": "2026-11-12T04:53:41.123153+00:00",
+          "user_id": "CM-012",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-013",
+      "query_id": "CM-013-Q1",
+      "query_type": "current",
+      "question": "当前劳动关系状态是什么？",
+      "answer": "离职",
+      "actual": "离职",
+      "actual_normalized": "离职",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "cd3bb95b-4150-4763-8c1f-ba4f00bafb2a",
+          "memory": "User started employment at their company in March 2024 (joined on 2024-03-01), and their employment status is now employed.",
+          "hash": "82f89743fd6f5a5555d02f0c467c6cf1",
+          "metadata": {
+            "case_id": "CM-013",
+            "event_id": "CM-013-E1",
+            "fact_key": "employment_status",
+            "value": "已入职",
+            "event_type": "assert",
+            "event_time": "2024-03-01",
+            "recorded_time": "2024-03-01",
+            "source_excerpt": "我在2024年3月入职该公司。"
+          },
+          "score": 0.42221528076527576,
+          "created_at": "2026-11-12T04:53:43.752817+00:00",
+          "updated_at": "2026-11-12T04:53:43.752817+00:00",
+          "user_id": "CM-013",
+          "attributed_to": "user"
+        },
+        {
+          "id": "97294ebb-27c8-4af2-b18b-29c35187c115",
+          "memory": "User resigned and left their company on 2025-02-01, transitioning from employed to departed status after having joined the company in March 2024.",
+          "hash": "27aca8932c7a62240932185e61f8763a",
+          "metadata": {
+            "case_id": "CM-013",
+            "event_id": "CM-013-E2",
+            "fact_key": "employment_status",
+            "value": "离职",
+            "event_type": "transition",
+            "event_time": "2025-02-01",
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "我在2025年2月1日提交辞职并离职。"
+          },
+          "score": 0.3871373116495911,
+          "created_at": "2026-11-12T04:53:44.476292+00:00",
+          "updated_at": "2026-11-12T04:53:44.476292+00:00",
+          "user_id": "CM-013",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-013",
+      "query_id": "CM-013-Q2",
+      "query_type": "at_time",
+      "question": "2025年1月1日时劳动关系状态是什么？",
+      "answer": "在职",
+      "actual": "在职",
+      "actual_normalized": "在职",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "97294ebb-27c8-4af2-b18b-29c35187c115",
+          "memory": "User resigned and left their company on 2025-02-01, transitioning from employed to departed status after having joined the company in March 2024.",
+          "hash": "27aca8932c7a62240932185e61f8763a",
+          "metadata": {
+            "case_id": "CM-013",
+            "event_id": "CM-013-E2",
+            "fact_key": "employment_status",
+            "value": "离职",
+            "event_type": "transition",
+            "event_time": "2025-02-01",
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "我在2025年2月1日提交辞职并离职。"
+          },
+          "score": 0.4681546802498726,
+          "created_at": "2026-11-12T04:53:44.476292+00:00",
+          "updated_at": "2026-11-12T04:53:44.476292+00:00",
+          "user_id": "CM-013",
+          "attributed_to": "user"
+        },
+        {
+          "id": "cd3bb95b-4150-4763-8c1f-ba4f00bafb2a",
+          "memory": "User started employment at their company in March 2024 (joined on 2024-03-01), and their employment status is now employed.",
+          "hash": "82f89743fd6f5a5555d02f0c467c6cf1",
+          "metadata": {
+            "case_id": "CM-013",
+            "event_id": "CM-013-E1",
+            "fact_key": "employment_status",
+            "value": "已入职",
+            "event_type": "assert",
+            "event_time": "2024-03-01",
+            "recorded_time": "2024-03-01",
+            "source_excerpt": "我在2024年3月入职该公司。"
+          },
+          "score": 0.46473039620499335,
+          "created_at": "2026-11-12T04:53:43.752817+00:00",
+          "updated_at": "2026-11-12T04:53:43.752817+00:00",
+          "user_id": "CM-013",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-014",
+      "query_id": "CM-014-Q1",
+      "query_type": "current",
+      "question": "当前付款状态是什么？",
+      "answer": "全部付款",
+      "actual": "已履行",
+      "actual_normalized": "全部付款",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "26fc6388-21eb-4666-b38d-c6dd9c57b345",
+          "memory": "As of May 1, 2025, the counterparty paid the remaining goods payment (剩余货款), changing the payment status from partially fulfilled to fully fulfilled (已履行).",
+          "hash": "f577925623ad4a0c9cfa0bccf04dd2cc",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E3",
+            "fact_key": "payment_status",
+            "value": "已履行",
+            "event_type": "transition",
+            "event_time": "2025-05-01",
+            "recorded_time": "2025-05-01",
+            "source_excerpt": "2025年5月对方支付了剩余货款。"
+          },
+          "score": 0.49742202832503857,
+          "created_at": "2026-11-12T04:53:48.973593+00:00",
+          "updated_at": "2026-11-12T04:53:48.973593+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        },
+        {
+          "id": "f1d8ff46-dfd3-4917-bb0d-81fae7e43ced",
+          "memory": "As of March 1, 2025, the counterparty had paid half of the goods payment (货款), changing the payment status from unfulfilled to partially fulfilled (部分履行).",
+          "hash": "39a6f7200584a31484797128a903e6f7",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E2",
+            "fact_key": "payment_status",
+            "value": "部分履行",
+            "event_type": "transition",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年3月对方支付了一半货款。"
+          },
+          "score": 0.4849368424265642,
+          "created_at": "2026-11-12T04:53:48.104291+00:00",
+          "updated_at": "2026-11-12T04:53:48.104291+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        },
+        {
+          "id": "f8915f8c-5f0c-4b47-83c4-940d14d3dbdc",
+          "memory": "As of January 1, 2025, the counterparty had not made payment at the outset; the payment status was recorded as unfulfilled (未履行).",
+          "hash": "6ac71d2058b5626991adff3a53edbfa9",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E1",
+            "fact_key": "payment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "对方一开始没有付款。"
+          },
+          "score": 0.44960085118164617,
+          "created_at": "2026-11-12T04:53:46.942948+00:00",
+          "updated_at": "2026-11-12T04:53:46.942948+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-014",
+      "query_id": "CM-014-Q2",
+      "query_type": "at_time",
+      "question": "2025年4月1日时付款状态是什么？",
+      "answer": "部分付款",
+      "actual": "部分履行",
+      "actual_normalized": "部分付款",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "26fc6388-21eb-4666-b38d-c6dd9c57b345",
+          "memory": "As of May 1, 2025, the counterparty paid the remaining goods payment (剩余货款), changing the payment status from partially fulfilled to fully fulfilled (已履行).",
+          "hash": "f577925623ad4a0c9cfa0bccf04dd2cc",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E3",
+            "fact_key": "payment_status",
+            "value": "已履行",
+            "event_type": "transition",
+            "event_time": "2025-05-01",
+            "recorded_time": "2025-05-01",
+            "source_excerpt": "2025年5月对方支付了剩余货款。"
+          },
+          "score": 0.5483311437444444,
+          "created_at": "2026-11-12T04:53:48.973593+00:00",
+          "updated_at": "2026-11-12T04:53:48.973593+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        },
+        {
+          "id": "f1d8ff46-dfd3-4917-bb0d-81fae7e43ced",
+          "memory": "As of March 1, 2025, the counterparty had paid half of the goods payment (货款), changing the payment status from unfulfilled to partially fulfilled (部分履行).",
+          "hash": "39a6f7200584a31484797128a903e6f7",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E2",
+            "fact_key": "payment_status",
+            "value": "部分履行",
+            "event_type": "transition",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年3月对方支付了一半货款。"
+          },
+          "score": 0.5480443139433679,
+          "created_at": "2026-11-12T04:53:48.104291+00:00",
+          "updated_at": "2026-11-12T04:53:48.104291+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        },
+        {
+          "id": "f8915f8c-5f0c-4b47-83c4-940d14d3dbdc",
+          "memory": "As of January 1, 2025, the counterparty had not made payment at the outset; the payment status was recorded as unfulfilled (未履行).",
+          "hash": "6ac71d2058b5626991adff3a53edbfa9",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E1",
+            "fact_key": "payment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "对方一开始没有付款。"
+          },
+          "score": 0.5384634634617588,
+          "created_at": "2026-11-12T04:53:46.942948+00:00",
+          "updated_at": "2026-11-12T04:53:46.942948+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-014",
+      "query_id": "CM-014-Q3",
+      "query_type": "original",
+      "question": "最早记录的付款状态是什么？",
+      "answer": "未付款",
+      "actual": "未履行",
+      "actual_normalized": "未付款",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "26fc6388-21eb-4666-b38d-c6dd9c57b345",
+          "memory": "As of May 1, 2025, the counterparty paid the remaining goods payment (剩余货款), changing the payment status from partially fulfilled to fully fulfilled (已履行).",
+          "hash": "f577925623ad4a0c9cfa0bccf04dd2cc",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E3",
+            "fact_key": "payment_status",
+            "value": "已履行",
+            "event_type": "transition",
+            "event_time": "2025-05-01",
+            "recorded_time": "2025-05-01",
+            "source_excerpt": "2025年5月对方支付了剩余货款。"
+          },
+          "score": 0.47740551506161777,
+          "created_at": "2026-11-12T04:53:48.973593+00:00",
+          "updated_at": "2026-11-12T04:53:48.973593+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        },
+        {
+          "id": "f1d8ff46-dfd3-4917-bb0d-81fae7e43ced",
+          "memory": "As of March 1, 2025, the counterparty had paid half of the goods payment (货款), changing the payment status from unfulfilled to partially fulfilled (部分履行).",
+          "hash": "39a6f7200584a31484797128a903e6f7",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E2",
+            "fact_key": "payment_status",
+            "value": "部分履行",
+            "event_type": "transition",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-03-01",
+            "source_excerpt": "2025年3月对方支付了一半货款。"
+          },
+          "score": 0.4720940175037819,
+          "created_at": "2026-11-12T04:53:48.104291+00:00",
+          "updated_at": "2026-11-12T04:53:48.104291+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        },
+        {
+          "id": "f8915f8c-5f0c-4b47-83c4-940d14d3dbdc",
+          "memory": "As of January 1, 2025, the counterparty had not made payment at the outset; the payment status was recorded as unfulfilled (未履行).",
+          "hash": "6ac71d2058b5626991adff3a53edbfa9",
+          "metadata": {
+            "case_id": "CM-014",
+            "event_id": "CM-014-E1",
+            "fact_key": "payment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "对方一开始没有付款。"
+          },
+          "score": 0.4604749423593307,
+          "created_at": "2026-11-12T04:53:46.942948+00:00",
+          "updated_at": "2026-11-12T04:53:46.942948+00:00",
+          "user_id": "CM-014",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-015",
+      "query_id": "CM-015-Q1",
+      "query_type": "current",
+      "question": "当前明确记录的合同日期是哪天？",
+      "answer": "2024-07-01",
+      "actual": "UNKNOWN",
+      "actual_normalized": "UNKNOWN",
+      "correct": false,
+      "retrieved": [
+        {
+          "id": "45c5bfed-26a0-43cc-9274-1b4b217affe9",
+          "memory": "User heard that a contract may have been signed on July 5, 2024, but is uncertain about this date, revising their earlier recollection of July 1, 2024",
+          "hash": "11a3af59e086f9c44d402b97f083ed0c",
+          "metadata": {
+            "case_id": "CM-015",
+            "event_id": "CM-015-E2",
+            "fact_key": "contract_signed_date",
+            "value": "2024-07-05",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "我听说可能是7月5日，但我不确定。"
+          },
+          "score": 0.5247327342582488,
+          "created_at": "2026-11-12T04:53:52.599969+00:00",
+          "updated_at": "2026-11-12T04:53:52.599969+00:00",
+          "user_id": "CM-015",
+          "attributed_to": "user"
+        },
+        {
+          "id": "9a6fe84b-cbcb-4900-9f0e-a2b2c2faee03",
+          "memory": "User recalls that a contract was signed on July 1, 2024",
+          "hash": "517dac48e4fc58fc9be6e7a18870c157",
+          "metadata": {
+            "case_id": "CM-015",
+            "event_id": "CM-015-E1",
+            "fact_key": "contract_signed_date",
+            "value": "2024-07-01",
+            "event_type": "assert",
+            "event_time": "2024-07-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我记得合同是2024年7月1日签的。"
+          },
+          "score": 0.4970384154713086,
+          "created_at": "2026-11-12T04:53:51.874932+00:00",
+          "updated_at": "2026-11-12T04:53:51.874932+00:00",
+          "user_id": "CM-015",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-015",
+      "query_id": "CM-015-Q2",
+      "query_type": "original",
+      "question": "当事人最初陈述的合同日期是哪天？",
+      "answer": "2024-07-01",
+      "actual": "2024年7月1日",
+      "actual_normalized": "2024-07-01",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "45c5bfed-26a0-43cc-9274-1b4b217affe9",
+          "memory": "User heard that a contract may have been signed on July 5, 2024, but is uncertain about this date, revising their earlier recollection of July 1, 2024",
+          "hash": "11a3af59e086f9c44d402b97f083ed0c",
+          "metadata": {
+            "case_id": "CM-015",
+            "event_id": "CM-015-E2",
+            "fact_key": "contract_signed_date",
+            "value": "2024-07-05",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "我听说可能是7月5日，但我不确定。"
+          },
+          "score": 0.4751551604897041,
+          "created_at": "2026-11-12T04:53:52.599969+00:00",
+          "updated_at": "2026-11-12T04:53:52.599969+00:00",
+          "user_id": "CM-015",
+          "attributed_to": "user"
+        },
+        {
+          "id": "9a6fe84b-cbcb-4900-9f0e-a2b2c2faee03",
+          "memory": "User recalls that a contract was signed on July 1, 2024",
+          "hash": "517dac48e4fc58fc9be6e7a18870c157",
+          "metadata": {
+            "case_id": "CM-015",
+            "event_id": "CM-015-E1",
+            "fact_key": "contract_signed_date",
+            "value": "2024-07-01",
+            "event_type": "assert",
+            "event_time": "2024-07-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我记得合同是2024年7月1日签的。"
+          },
+          "score": 0.43339691958279647,
+          "created_at": "2026-11-12T04:53:51.874932+00:00",
+          "updated_at": "2026-11-12T04:53:51.874932+00:00",
+          "user_id": "CM-015",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-016",
+      "query_id": "CM-016-Q1",
+      "query_type": "current",
+      "question": "当前有明确依据的履行状态是什么？",
+      "answer": "未履行",
+      "actual": "UNKNOWN",
+      "actual_normalized": "UNKNOWN",
+      "correct": false,
+      "retrieved": [
+        {
+          "id": "9926add3-b22d-40ff-976a-e57b6f67254f",
+          "memory": "On February 1, 2025, User reported hearing that the other party may have already transferred the repayment, but User has no proof or receipt of it, so the repayment status is uncertain",
+          "hash": "a7131fb14728abe082d926ba94ab9bf8",
+          "metadata": {
+            "case_id": "CM-016",
+            "event_id": "CM-016-E2",
+            "fact_key": "repayment_status",
+            "value": "已履行",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "我好像听说对方已经转账了，但我没有凭证。"
+          },
+          "score": 0.49297156186082935,
+          "created_at": "2026-11-12T04:53:56.697110+00:00",
+          "updated_at": "2026-11-12T04:53:56.697110+00:00",
+          "user_id": "CM-016",
+          "attributed_to": "user"
+        },
+        {
+          "id": "66c7835f-b316-43ca-8049-764be2d282e2",
+          "memory": "As of January 1, 2025, User stated they had not received repayment from the other party, indicating the repayment obligation remains unfulfilled",
+          "hash": "b92820f4d89fa220c12dd900a181f680",
+          "metadata": {
+            "case_id": "CM-016",
+            "event_id": "CM-016-E1",
+            "fact_key": "repayment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我没有收到对方的还款。"
+          },
+          "score": 0.48125457581065667,
+          "created_at": "2026-11-12T04:53:55.504490+00:00",
+          "updated_at": "2026-11-12T04:53:55.504490+00:00",
+          "user_id": "CM-016",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-016",
+      "query_id": "CM-016-Q2",
+      "query_type": "original",
+      "question": "最早记录的履行状态是什么？",
+      "answer": "未履行",
+      "actual": "未履行",
+      "actual_normalized": "未履行",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "9926add3-b22d-40ff-976a-e57b6f67254f",
+          "memory": "On February 1, 2025, User reported hearing that the other party may have already transferred the repayment, but User has no proof or receipt of it, so the repayment status is uncertain",
+          "hash": "a7131fb14728abe082d926ba94ab9bf8",
+          "metadata": {
+            "case_id": "CM-016",
+            "event_id": "CM-016-E2",
+            "fact_key": "repayment_status",
+            "value": "已履行",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "我好像听说对方已经转账了，但我没有凭证。"
+          },
+          "score": 0.3860666166537048,
+          "created_at": "2026-11-12T04:53:56.697110+00:00",
+          "updated_at": "2026-11-12T04:53:56.697110+00:00",
+          "user_id": "CM-016",
+          "attributed_to": "user"
+        },
+        {
+          "id": "66c7835f-b316-43ca-8049-764be2d282e2",
+          "memory": "As of January 1, 2025, User stated they had not received repayment from the other party, indicating the repayment obligation remains unfulfilled",
+          "hash": "b92820f4d89fa220c12dd900a181f680",
+          "metadata": {
+            "case_id": "CM-016",
+            "event_id": "CM-016-E1",
+            "fact_key": "repayment_status",
+            "value": "未履行",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我没有收到对方的还款。"
+          },
+          "score": 0.3857092361286813,
+          "created_at": "2026-11-12T04:53:55.504490+00:00",
+          "updated_at": "2026-11-12T04:53:55.504490+00:00",
+          "user_id": "CM-016",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-017",
+      "query_id": "CM-017-Q1",
+      "query_type": "current",
+      "question": "当前有明确依据的补充协议状态是什么？",
+      "answer": "未确认存在",
+      "actual": "可能签过",
+      "actual_normalized": "未确认存在",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "b93aee86-e9da-47eb-b9ae-c30a82e3f29f",
+          "memory": "As of January 1, 2025, the user stated they had never seen the supplemental agreement (补充协议).",
+          "hash": "fe2dd92810ff4190d787ff28a7fd0c7a",
+          "metadata": {
+            "case_id": "CM-017",
+            "event_id": "CM-017-E1",
+            "fact_key": "supplemental_agreement",
+            "value": "未见过",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我没有见过补充协议。"
+          },
+          "score": 0.5952404200627541,
+          "created_at": "2026-11-12T04:53:58.572537+00:00",
+          "updated_at": "2026-11-12T04:53:58.572537+00:00",
+          "user_id": "CM-017",
+          "attributed_to": "user"
+        },
+        {
+          "id": "edce0b4a-73fe-4184-b18d-72cb95d30cbe",
+          "memory": "As of February 1, 2025, the user reported that the opposing party said a supplemental agreement (补充协议) may have been signed, but no text of it was provided.",
+          "hash": "9a7e239b2b4fa5eff3e62e464a1fff1a",
+          "metadata": {
+            "case_id": "CM-017",
+            "event_id": "CM-017-E2",
+            "fact_key": "supplemental_agreement",
+            "value": "可能签过",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "对方说可能签过补充协议"
+          },
+          "score": 0.5792958980124365,
+          "created_at": "2026-11-12T04:53:59.404356+00:00",
+          "updated_at": "2026-11-12T04:53:59.404356+00:00",
+          "user_id": "CM-017",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-017",
+      "query_id": "CM-017-Q2",
+      "query_type": "original",
+      "question": "最初记录的补充协议状态是什么？",
+      "answer": "未确认存在",
+      "actual": "未见过",
+      "actual_normalized": "未确认存在",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "b93aee86-e9da-47eb-b9ae-c30a82e3f29f",
+          "memory": "As of January 1, 2025, the user stated they had never seen the supplemental agreement (补充协议).",
+          "hash": "fe2dd92810ff4190d787ff28a7fd0c7a",
+          "metadata": {
+            "case_id": "CM-017",
+            "event_id": "CM-017-E1",
+            "fact_key": "supplemental_agreement",
+            "value": "未见过",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "我没有见过补充协议。"
+          },
+          "score": 0.5471106696210104,
+          "created_at": "2026-11-12T04:53:58.572537+00:00",
+          "updated_at": "2026-11-12T04:53:58.572537+00:00",
+          "user_id": "CM-017",
+          "attributed_to": "user"
+        },
+        {
+          "id": "edce0b4a-73fe-4184-b18d-72cb95d30cbe",
+          "memory": "As of February 1, 2025, the user reported that the opposing party said a supplemental agreement (补充协议) may have been signed, but no text of it was provided.",
+          "hash": "9a7e239b2b4fa5eff3e62e464a1fff1a",
+          "metadata": {
+            "case_id": "CM-017",
+            "event_id": "CM-017-E2",
+            "fact_key": "supplemental_agreement",
+            "value": "可能签过",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-02-01",
+            "source_excerpt": "对方说可能签过补充协议"
+          },
+          "score": 0.5272519755837988,
+          "created_at": "2026-11-12T04:53:59.404356+00:00",
+          "updated_at": "2026-11-12T04:53:59.404356+00:00",
+          "user_id": "CM-017",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-018",
+      "query_id": "CM-018-Q1",
+      "query_type": "current",
+      "question": "当前记录的借款本金是多少？",
+      "answer": "50000",
+      "actual": "50000元",
+      "actual_normalized": "50000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "a03f61ed-ef8f-4ba8-a4f7-f3a539e8adc6",
+          "memory": "User's loan principal (借款本金) is 50,000 yuan, as stated on January 1, 2025",
+          "hash": "ce12b9184d9dfaa3ccefa850bfca93a4",
+          "metadata": {
+            "case_id": "CM-018",
+            "event_id": "CM-018-E1",
+            "fact_key": "loan_amount",
+            "value": "50000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "借款本金是5万元"
+          },
+          "score": 0.585015909145165,
+          "created_at": "2026-11-12T04:54:02.544828+00:00",
+          "updated_at": "2026-11-12T04:54:02.544828+00:00",
+          "user_id": "CM-018",
+          "attributed_to": "user"
+        },
+        {
+          "id": "921ad5b3-2a35-4fec-80b7-a123df4fa815",
+          "memory": "User stated on January 2, 2025 that the legal fee (律师费) is approximately 8,000 yuan, but expressed uncertainty about this amount",
+          "hash": "12f8d134786fd371af18eb9ee7009cf4",
+          "metadata": {
+            "case_id": "CM-018",
+            "event_id": "CM-018-E2",
+            "fact_key": "legal_fee",
+            "value": "8000",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "律师费大约是8000元"
+          },
+          "score": 0.4222220384347315,
+          "created_at": "2026-11-12T04:54:03.630627+00:00",
+          "updated_at": "2026-11-12T04:54:03.630627+00:00",
+          "user_id": "CM-018",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-018",
+      "query_id": "CM-018-Q2",
+      "query_type": "current",
+      "question": "当前记录的律师费是多少？",
+      "answer": "8000",
+      "actual": "约8000元",
+      "actual_normalized": "8000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "921ad5b3-2a35-4fec-80b7-a123df4fa815",
+          "memory": "User stated on January 2, 2025 that the legal fee (律师费) is approximately 8,000 yuan, but expressed uncertainty about this amount",
+          "hash": "12f8d134786fd371af18eb9ee7009cf4",
+          "metadata": {
+            "case_id": "CM-018",
+            "event_id": "CM-018-E2",
+            "fact_key": "legal_fee",
+            "value": "8000",
+            "event_type": "uncertain",
+            "event_time": null,
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "律师费大约是8000元"
+          },
+          "score": 0.6385843118027086,
+          "created_at": "2026-11-12T04:54:03.630627+00:00",
+          "updated_at": "2026-11-12T04:54:03.630627+00:00",
+          "user_id": "CM-018",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a03f61ed-ef8f-4ba8-a4f7-f3a539e8adc6",
+          "memory": "User's loan principal (借款本金) is 50,000 yuan, as stated on January 1, 2025",
+          "hash": "ce12b9184d9dfaa3ccefa850bfca93a4",
+          "metadata": {
+            "case_id": "CM-018",
+            "event_id": "CM-018-E1",
+            "fact_key": "loan_amount",
+            "value": "50000",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "借款本金是5万元"
+          },
+          "score": 0.4226668002944297,
+          "created_at": "2026-11-12T04:54:02.544828+00:00",
+          "updated_at": "2026-11-12T04:54:02.544828+00:00",
+          "user_id": "CM-018",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-019",
+      "query_id": "CM-019-Q1",
+      "query_type": "current",
+      "question": "合同签订日期是哪天？",
+      "answer": "2025-01-01",
+      "actual": "2025年1月1日",
+      "actual_normalized": "2025-01-01",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "e0b51d12-efc1-46e6-ad42-c093d8f01dfd",
+          "memory": "The contract was signed on January 1, 2025.",
+          "hash": "8dccb30d97a2e035ff0484c7947c5cc7",
+          "metadata": {
+            "case_id": "CM-019",
+            "event_id": "CM-019-E1",
+            "fact_key": "contract_signed_date",
+            "value": "2025-01-01",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "合同在2025年1月1日签订"
+          },
+          "score": 0.5043237644299934,
+          "created_at": "2026-11-12T04:54:05.636413+00:00",
+          "updated_at": "2026-11-12T04:54:05.636413+00:00",
+          "user_id": "CM-019",
+          "attributed_to": "user"
+        },
+        {
+          "id": "f8bae2e4-6bd3-42f4-9194-f15a08e2f339",
+          "memory": "The contract stipulates that payment is due on March 1, 2025.",
+          "hash": "e71c8e3627539a02f1af7314aa0bd64a",
+          "metadata": {
+            "case_id": "CM-019",
+            "event_id": "CM-019-E2",
+            "fact_key": "payment_due_date",
+            "value": "2025-03-01",
+            "event_type": "assert",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "合同约定在2025年3月1日付款。"
+          },
+          "score": 0.436438101814668,
+          "created_at": "2026-11-12T04:54:06.565394+00:00",
+          "updated_at": "2026-11-12T04:54:06.565394+00:00",
+          "user_id": "CM-019",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-019",
+      "query_id": "CM-019-Q2",
+      "query_type": "current",
+      "question": "约定付款日期是哪天？",
+      "answer": "2025-03-01",
+      "actual": "2025年3月1日",
+      "actual_normalized": "2025-03-01",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "f8bae2e4-6bd3-42f4-9194-f15a08e2f339",
+          "memory": "The contract stipulates that payment is due on March 1, 2025.",
+          "hash": "e71c8e3627539a02f1af7314aa0bd64a",
+          "metadata": {
+            "case_id": "CM-019",
+            "event_id": "CM-019-E2",
+            "fact_key": "payment_due_date",
+            "value": "2025-03-01",
+            "event_type": "assert",
+            "event_time": "2025-03-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "合同约定在2025年3月1日付款。"
+          },
+          "score": 0.4745147149707089,
+          "created_at": "2026-11-12T04:54:06.565394+00:00",
+          "updated_at": "2026-11-12T04:54:06.565394+00:00",
+          "user_id": "CM-019",
+          "attributed_to": "user"
+        },
+        {
+          "id": "e0b51d12-efc1-46e6-ad42-c093d8f01dfd",
+          "memory": "The contract was signed on January 1, 2025.",
+          "hash": "8dccb30d97a2e035ff0484c7947c5cc7",
+          "metadata": {
+            "case_id": "CM-019",
+            "event_id": "CM-019-E1",
+            "fact_key": "contract_signed_date",
+            "value": "2025-01-01",
+            "event_type": "assert",
+            "event_time": "2025-01-01",
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "合同在2025年1月1日签订"
+          },
+          "score": 0.44663260624637235,
+          "created_at": "2026-11-12T04:54:05.636413+00:00",
+          "updated_at": "2026-11-12T04:54:05.636413+00:00",
+          "user_id": "CM-019",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-020",
+      "query_id": "CM-020-Q1",
+      "query_type": "current",
+      "question": "当前记录的借款金额是多少？",
+      "answer": "30000",
+      "actual": "30000",
+      "actual_normalized": "30000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "45195bcc-a9d7-46b1-a584-c83fd3fbb507",
+          "memory": "User paid a rental deposit (租房押金) of 30,000 yuan, as stated on January 2, 2025",
+          "hash": "17ea4a72f9b72b69951ffb9b46bc230a",
+          "metadata": {
+            "case_id": "CM-020",
+            "event_id": "CM-020-E2",
+            "fact_key": "rent_deposit",
+            "value": "30000",
+            "event_type": "assert",
+            "event_time": "2025-01-02",
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "另外租房押金也是3万元。"
+          },
+          "score": 0.37594134607653606,
+          "created_at": "2026-11-12T04:54:09.875206+00:00",
+          "updated_at": "2026-11-12T04:54:09.875206+00:00",
+          "user_id": "CM-020",
+          "attributed_to": "user"
+        },
+        {
+          "id": "e6bc662e-75c1-438e-8803-31cb97a178dc",
+          "memory": "User is owed a loan of 30,000 yuan by another party, as recorded on January 1, 2025",
+          "hash": "cc46a74751d53787493ba570f64b41e1",
+          "metadata": {
+            "case_id": "CM-020",
+            "event_id": "CM-020-E1",
+            "fact_key": "loan_amount",
+            "value": "30000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "对方欠我借款3万元"
+          },
+          "score": 0.3585022214526218,
+          "created_at": "2026-11-12T04:54:08.899978+00:00",
+          "updated_at": "2026-11-12T04:54:08.899978+00:00",
+          "user_id": "CM-020",
+          "attributed_to": "user"
+        }
+      ]
+    },
+    {
+      "case_id": "CM-020",
+      "query_id": "CM-020-Q2",
+      "query_type": "current",
+      "question": "当前记录的租房押金是多少？",
+      "answer": "30000",
+      "actual": "30000元",
+      "actual_normalized": "30000",
+      "correct": true,
+      "retrieved": [
+        {
+          "id": "45195bcc-a9d7-46b1-a584-c83fd3fbb507",
+          "memory": "User paid a rental deposit (租房押金) of 30,000 yuan, as stated on January 2, 2025",
+          "hash": "17ea4a72f9b72b69951ffb9b46bc230a",
+          "metadata": {
+            "case_id": "CM-020",
+            "event_id": "CM-020-E2",
+            "fact_key": "rent_deposit",
+            "value": "30000",
+            "event_type": "assert",
+            "event_time": "2025-01-02",
+            "recorded_time": "2025-01-02",
+            "source_excerpt": "另外租房押金也是3万元。"
+          },
+          "score": 0.627816034855176,
+          "created_at": "2026-11-12T04:54:09.875206+00:00",
+          "updated_at": "2026-11-12T04:54:09.875206+00:00",
+          "user_id": "CM-020",
+          "attributed_to": "user"
+        },
+        {
+          "id": "e6bc662e-75c1-438e-8803-31cb97a178dc",
+          "memory": "User is owed a loan of 30,000 yuan by another party, as recorded on January 1, 2025",
+          "hash": "cc46a74751d53787493ba570f64b41e1",
+          "metadata": {
+            "case_id": "CM-020",
+            "event_id": "CM-020-E1",
+            "fact_key": "loan_amount",
+            "value": "30000",
+            "event_type": "assert",
+            "event_time": null,
+            "recorded_time": "2025-01-01",
+            "source_excerpt": "对方欠我借款3万元"
+          },
+          "score": 0.39162617378001796,
+          "created_at": "2026-11-12T04:54:08.899978+00:00",
+          "updated_at": "2026-11-12T04:54:08.899978+00:00",
+          "user_id": "CM-020",
+          "attributed_to": "user"
+        }
+      ]
+    }
+  ],
+  "add_log": [
+    {
+      "case_id": "CM-001",
+      "event_id": "CM-001-E1",
+      "result": {
+        "results": [
+          {
+            "id": "ce467030-4fad-4f70-9de3-81df72cdeb69",
+            "memory": "User lent someone 80,000 yuan on January 1, 2025.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-001",
+      "event_id": "CM-001-E2",
+      "result": {
+        "results": [
+          {
+            "id": "a388d758-6e3b-4097-9d53-827f79912ee6",
+            "memory": "The borrower repaid 30,000 yuan of the 80,000 yuan loan on March 1, 2025, leaving 50,000 yuan outstanding.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-001",
+      "event_id": "CM-001-E3",
+      "result": {
+        "results": []
+      }
+    },
+    {
+      "case_id": "CM-002",
+      "event_id": "CM-002-E1",
+      "result": {
+        "results": [
+          {
+            "id": "8a10a0d1-85bb-4151-96ac-542e3a9af33d",
+            "memory": "User's contract was signed on June 1, 2024",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-002",
+      "event_id": "CM-002-E2",
+      "result": {
+        "results": [
+          {
+            "id": "1d3e244f-454e-4c39-b55c-3671381263a3",
+            "memory": "User corrected the contract signing date: the contract was actually signed on June 15, 2024, not June 1, 2024 as previously stated",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-003",
+      "event_id": "CM-003-E1",
+      "result": {
+        "results": [
+          {
+            "id": "2bd16f22-a622-4102-894a-f8a489f61b15",
+            "memory": "As of January 1, 2025, the other party had still not fulfilled their repayment obligation (repayment status: unfulfilled).",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-003",
+      "event_id": "CM-003-E2",
+      "result": {
+        "results": [
+          {
+            "id": "b2833ad9-48c8-4132-bd20-12a315f7afa2",
+            "memory": "As of February 1, 2025, the other party had repaid part of the amount owed, changing their repayment status from unfulfilled to partially fulfilled.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-003",
+      "event_id": "CM-003-E3",
+      "result": {
+        "results": [
+          {
+            "id": "fe47c259-6aa0-4f5d-8343-31e76d3a993a",
+            "memory": "As of March 1, 2025, the other party had fully repaid the entire amount owed, changing their repayment status from partially fulfilled to fully fulfilled.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-004",
+      "event_id": "CM-004-E1",
+      "result": {
+        "results": [
+          {
+            "id": "c50e428d-5b7b-4026-970d-895440e4294a",
+            "memory": "User claims that the other party owes them 100,000 yuan (10万元), as asserted in a statement recorded on January 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-004",
+      "event_id": "CM-004-E2",
+      "result": {
+        "results": [
+          {
+            "id": "3596e21a-cafe-472a-860e-4a4bf4c34278",
+            "memory": "User stated on January 5, 2025 that they had heard the other party may only owe 80,000 yuan (8万元), but noted they have no evidence to support this, expressing uncertainty about the claimed debt amount",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-005",
+      "event_id": "CM-005-E1",
+      "result": {
+        "results": [
+          {
+            "id": "48243b6b-6049-43b5-b55e-51250d41ef82",
+            "memory": "The loan principal amount is 100,000 (10万元), as stated on January 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-005",
+      "event_id": "CM-005-E2",
+      "result": {
+        "results": [
+          {
+            "id": "a5645861-a1f3-4991-aab1-9bc99ca824e8",
+            "memory": "User lives in District A (A区), as stated on January 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-005",
+      "event_id": "CM-005-E3",
+      "result": {
+        "results": [
+          {
+            "id": "1367cd33-4765-48a7-b3a1-c4aa18aacc24",
+            "memory": "The total contract amount is 100,000 (10万元), as stated on January 2, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-006",
+      "event_id": "CM-006-E1",
+      "error": "event construction failed: non-null event_time cannot use unknown precision"
+    },
+    {
+      "case_id": "CM-006",
+      "event_id": "CM-006-E2",
+      "result": {
+        "results": [
+          {
+            "id": "82de83bc-47e9-4d60-b89f-202cab589521",
+            "memory": "User agreed to repay a debt in full by June 1, 2025, as stated in an agreement recorded on March 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-007",
+      "event_id": "CM-007-E1",
+      "result": {
+        "results": [
+          {
+            "id": "9d6c764d-f285-4308-b2aa-9f1a8595d098",
+            "memory": "User started employment on August 1, 2024, as stated in their own record of the event.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-007",
+      "event_id": "CM-007-E2",
+      "result": {
+        "results": [
+          {
+            "id": "752447c9-88fe-4f0c-a054-e44dc1310bc7",
+            "memory": "User's agreed monthly salary is 9,000 yuan, as stated in their employment record dated August 1, 2024",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-008",
+      "event_id": "CM-008-E1",
+      "result": {
+        "results": [
+          {
+            "id": "33d7d19f-e684-47b0-a7a6-464bc414f57e",
+            "memory": "User's rental deposit is 6000 yuan, as stated on January 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-008",
+      "event_id": "CM-008-E2",
+      "result": {
+        "results": [
+          {
+            "id": "7116895d-8ac8-45de-8d62-a10b937df91c",
+            "memory": "User's monthly rent is 3000 yuan, as stated on January 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-009",
+      "event_id": "CM-009-E1",
+      "result": {
+        "results": [
+          {
+            "id": "808e0c94-da41-4176-8621-6b0b6a4c0b5e",
+            "memory": "User stated that the loan amount they initially mentioned was 120,000 (12万元), recorded on December 1, 2024",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-009",
+      "event_id": "CM-009-E2",
+      "result": {
+        "results": [
+          {
+            "id": "3e627e3e-20ec-4935-a9fb-7336d78a157b",
+            "memory": "User corrected the loan amount from 120,000 (12万元) to 100,000 (10万元) after checking the IOU (借条), recorded on December 10, 2024",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-010",
+      "event_id": "CM-010-E1",
+      "result": {
+        "results": [
+          {
+            "id": "62320400-f0a5-4d00-9c91-1eee2b170ff5",
+            "memory": "A hearing date of April 10, 2025 was asserted, as recorded on March 1, 2025, with the original statement being that the court hearing date is April 10, 2025.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-010",
+      "event_id": "CM-010-E2",
+      "result": {
+        "results": [
+          {
+            "id": "a6b1789e-22d7-42f0-951a-b4c2ce7f17c9",
+            "memory": "The hearing date was corrected to April 15, 2025 (previously stated as April 10, 2025) after the user received a summons and realized the earlier date was wrong; correction recorded on March 5, 2025.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-011",
+      "event_id": "CM-011-E1",
+      "result": {
+        "results": [
+          {
+            "id": "e14e69f2-df13-46c3-851a-c71e6ae36a2a",
+            "memory": "The counterparty received a total of 1000 units of goods, as recorded on February 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-011",
+      "event_id": "CM-011-E2",
+      "result": {
+        "results": [
+          {
+            "id": "2afcad6b-8854-498f-9230-76dc88b27596",
+            "memory": "The user corrected the delivered quantity of goods from 1000 to 800 units after checking the delivery note, recorded on February 5, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-012",
+      "event_id": "CM-012-E1",
+      "result": {
+        "results": [
+          {
+            "id": "a89cb53b-fc0a-4670-9819-56644d71c932",
+            "memory": "User's lease agreement took effect on January 1, 2025, and the lease status is recorded as fulfilled (已履行).",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-012",
+      "event_id": "CM-012-E2",
+      "result": {
+        "results": [
+          {
+            "id": "bcc61804-1355-4ac2-9cf0-f3a62ec74741",
+            "memory": "The lease agreement was terminated by both parties on May 1, 2025, changing its status from fulfilled (已履行) to terminated/rescinded (已解除).",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-013",
+      "event_id": "CM-013-E1",
+      "result": {
+        "results": [
+          {
+            "id": "cd3bb95b-4150-4763-8c1f-ba4f00bafb2a",
+            "memory": "User started employment at their company in March 2024 (joined on 2024-03-01), and their employment status is now employed.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-013",
+      "event_id": "CM-013-E2",
+      "result": {
+        "results": [
+          {
+            "id": "97294ebb-27c8-4af2-b18b-29c35187c115",
+            "memory": "User resigned and left their company on 2025-02-01, transitioning from employed to departed status after having joined the company in March 2024.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-014",
+      "event_id": "CM-014-E1",
+      "result": {
+        "results": [
+          {
+            "id": "f8915f8c-5f0c-4b47-83c4-940d14d3dbdc",
+            "memory": "As of January 1, 2025, the counterparty had not made payment at the outset; the payment status was recorded as unfulfilled (未履行).",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-014",
+      "event_id": "CM-014-E2",
+      "result": {
+        "results": [
+          {
+            "id": "f1d8ff46-dfd3-4917-bb0d-81fae7e43ced",
+            "memory": "As of March 1, 2025, the counterparty had paid half of the goods payment (货款), changing the payment status from unfulfilled to partially fulfilled (部分履行).",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-014",
+      "event_id": "CM-014-E3",
+      "result": {
+        "results": [
+          {
+            "id": "26fc6388-21eb-4666-b38d-c6dd9c57b345",
+            "memory": "As of May 1, 2025, the counterparty paid the remaining goods payment (剩余货款), changing the payment status from partially fulfilled to fully fulfilled (已履行).",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-015",
+      "event_id": "CM-015-E1",
+      "result": {
+        "results": [
+          {
+            "id": "9a6fe84b-cbcb-4900-9f0e-a2b2c2faee03",
+            "memory": "User recalls that a contract was signed on July 1, 2024",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-015",
+      "event_id": "CM-015-E2",
+      "result": {
+        "results": [
+          {
+            "id": "45c5bfed-26a0-43cc-9274-1b4b217affe9",
+            "memory": "User heard that a contract may have been signed on July 5, 2024, but is uncertain about this date, revising their earlier recollection of July 1, 2024",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-016",
+      "event_id": "CM-016-E1",
+      "result": {
+        "results": [
+          {
+            "id": "66c7835f-b316-43ca-8049-764be2d282e2",
+            "memory": "As of January 1, 2025, User stated they had not received repayment from the other party, indicating the repayment obligation remains unfulfilled",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-016",
+      "event_id": "CM-016-E2",
+      "result": {
+        "results": [
+          {
+            "id": "9926add3-b22d-40ff-976a-e57b6f67254f",
+            "memory": "On February 1, 2025, User reported hearing that the other party may have already transferred the repayment, but User has no proof or receipt of it, so the repayment status is uncertain",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-017",
+      "event_id": "CM-017-E1",
+      "result": {
+        "results": [
+          {
+            "id": "b93aee86-e9da-47eb-b9ae-c30a82e3f29f",
+            "memory": "As of January 1, 2025, the user stated they had never seen the supplemental agreement (补充协议).",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-017",
+      "event_id": "CM-017-E2",
+      "result": {
+        "results": [
+          {
+            "id": "edce0b4a-73fe-4184-b18d-72cb95d30cbe",
+            "memory": "As of February 1, 2025, the user reported that the opposing party said a supplemental agreement (补充协议) may have been signed, but no text of it was provided.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-018",
+      "event_id": "CM-018-E1",
+      "result": {
+        "results": [
+          {
+            "id": "a03f61ed-ef8f-4ba8-a4f7-f3a539e8adc6",
+            "memory": "User's loan principal (借款本金) is 50,000 yuan, as stated on January 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-018",
+      "event_id": "CM-018-E2",
+      "result": {
+        "results": [
+          {
+            "id": "921ad5b3-2a35-4fec-80b7-a123df4fa815",
+            "memory": "User stated on January 2, 2025 that the legal fee (律师费) is approximately 8,000 yuan, but expressed uncertainty about this amount",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-019",
+      "event_id": "CM-019-E1",
+      "result": {
+        "results": [
+          {
+            "id": "e0b51d12-efc1-46e6-ad42-c093d8f01dfd",
+            "memory": "The contract was signed on January 1, 2025.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-019",
+      "event_id": "CM-019-E2",
+      "result": {
+        "results": [
+          {
+            "id": "f8bae2e4-6bd3-42f4-9194-f15a08e2f339",
+            "memory": "The contract stipulates that payment is due on March 1, 2025.",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-020",
+      "event_id": "CM-020-E1",
+      "result": {
+        "results": [
+          {
+            "id": "e6bc662e-75c1-438e-8803-31cb97a178dc",
+            "memory": "User is owed a loan of 30,000 yuan by another party, as recorded on January 1, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "CM-020",
+      "event_id": "CM-020-E2",
+      "result": {
+        "results": [
+          {
+            "id": "45195bcc-a9d7-46b1-a584-c83fd3fbb507",
+            "memory": "User paid a rental deposit (租房押金) of 30,000 yuan, as stated on January 2, 2025",
+            "event": "ADD"
+          }
+        ]
+      }
+    }
+  ],
+  "rescored": true
+}

@@ -1,0 +1,7 @@
+run,run_id,bin,nbin,ave,status
+baseline,B0-full-history-5cases,0.6500,0.3533,0.5017,single reference run
+versioned_memory,20261112-131544,0.6500,0.6867,0.6683,complete score; partial memory log
+versioned_memory,20261112-132013,0.5333,0.5600,0.5467,complete
+versioned_memory,20261112-132721,0.8000,0.6400,0.7200,complete
+versioned_memory_mean,three-runs,0.6611,0.6289,0.6450,mean of three memory runs
+delta_vs_baseline,three-runs-mean,0.0111,0.2756,0.1433,descriptive only

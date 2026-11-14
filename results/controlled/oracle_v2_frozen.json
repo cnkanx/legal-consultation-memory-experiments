@@ -1,0 +1,1256 @@
+{
+  "latest_overwrite": {
+    "overall_accuracy": 0.7727272727272727,
+    "by_query_type": {
+      "at_time": {
+        "correct": 1,
+        "total": 5,
+        "accuracy": 0.2
+      },
+      "current": {
+        "correct": 28,
+        "total": 28,
+        "accuracy": 1.0
+      },
+      "original": {
+        "correct": 5,
+        "total": 11,
+        "accuracy": 0.45454545454545453
+      }
+    },
+    "details": [
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q1",
+        "query_type": "current",
+        "question": "当前剩余欠款是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q2",
+        "query_type": "at_time",
+        "question": "截至2025年2月1日，记录的借款金额是多少？",
+        "answer": "80000",
+        "predicted": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q3",
+        "query_type": "original",
+        "question": "最初陈述的借款金额是多少？",
+        "answer": "80000",
+        "predicted": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q1",
+        "query_type": "current",
+        "question": "当前确认的合同签署日期是哪天？",
+        "answer": "2024-06-15",
+        "predicted": "2024-06-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q2",
+        "query_type": "original",
+        "question": "当事人最初陈述的签署日期是哪天？",
+        "answer": "2024-06-01",
+        "predicted": "2024-06-15",
+        "correct": false
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q1",
+        "query_type": "current",
+        "question": "当前履行状态是什么？",
+        "answer": "已履行",
+        "predicted": "已履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q2",
+        "query_type": "at_time",
+        "question": "2025年2月10日时履行状态是什么？",
+        "answer": "部分履行",
+        "predicted": "已履行",
+        "correct": false
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q3",
+        "query_type": "original",
+        "question": "最早记录的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "已履行",
+        "correct": false
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q1",
+        "query_type": "current",
+        "question": "当事人当前主张的欠款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q2",
+        "query_type": "original",
+        "question": "当事人最初主张的欠款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款本金是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q2",
+        "query_type": "current",
+        "question": "目前记录的居住区域是什么？",
+        "answer": "A区",
+        "predicted": "A区",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q3",
+        "query_type": "current",
+        "question": "当前记录的合同总金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款金额是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q2",
+        "query_type": "current",
+        "question": "约定的还款日期是哪天？",
+        "answer": "2025-06-01",
+        "predicted": "2025-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q1",
+        "query_type": "current",
+        "question": "记录的入职日期是哪天？",
+        "answer": "2024-08-01",
+        "predicted": "2024-08-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q2",
+        "query_type": "current",
+        "question": "约定的月工资是多少？",
+        "answer": "9000",
+        "predicted": "9000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q1",
+        "query_type": "current",
+        "question": "当前记录的租房押金是多少？",
+        "answer": "6000",
+        "predicted": "6000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q2",
+        "query_type": "current",
+        "question": "当前记录的月租金是多少？",
+        "answer": "3000",
+        "predicted": "3000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q1",
+        "query_type": "current",
+        "question": "当前确认的借款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q2",
+        "query_type": "original",
+        "question": "最初陈述的借款金额是多少？",
+        "answer": "120000",
+        "predicted": "100000",
+        "correct": false
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q1",
+        "query_type": "current",
+        "question": "当前记录的开庭日期是哪天？",
+        "answer": "2025-04-15",
+        "predicted": "2025-04-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q2",
+        "query_type": "original",
+        "question": "最初陈述的开庭日期是哪天？",
+        "answer": "2025-04-10",
+        "predicted": "2025-04-15",
+        "correct": false
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q1",
+        "query_type": "current",
+        "question": "当前确认的交付数量是多少？",
+        "answer": "800",
+        "predicted": "800",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q2",
+        "query_type": "original",
+        "question": "最初陈述的交付数量是多少？",
+        "answer": "1000",
+        "predicted": "800",
+        "correct": false
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q1",
+        "query_type": "current",
+        "question": "当前租赁状态是什么？",
+        "answer": "解除",
+        "predicted": "解除",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q2",
+        "query_type": "at_time",
+        "question": "2025年4月1日时租赁状态是什么？",
+        "answer": "生效",
+        "predicted": "解除",
+        "correct": false
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q1",
+        "query_type": "current",
+        "question": "当前劳动关系状态是什么？",
+        "answer": "离职",
+        "predicted": "离职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q2",
+        "query_type": "at_time",
+        "question": "2025年1月1日时劳动关系状态是什么？",
+        "answer": "在职",
+        "predicted": "离职",
+        "correct": false
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q1",
+        "query_type": "current",
+        "question": "当前付款状态是什么？",
+        "answer": "全部付款",
+        "predicted": "全部付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q2",
+        "query_type": "at_time",
+        "question": "2025年4月1日时付款状态是什么？",
+        "answer": "部分付款",
+        "predicted": "全部付款",
+        "correct": false
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q3",
+        "query_type": "original",
+        "question": "最早记录的付款状态是什么？",
+        "answer": "未付款",
+        "predicted": "全部付款",
+        "correct": false
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q1",
+        "query_type": "current",
+        "question": "当前明确记录的合同日期是哪天？",
+        "answer": "2024-07-01",
+        "predicted": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q2",
+        "query_type": "original",
+        "question": "当事人最初陈述的合同日期是哪天？",
+        "answer": "2024-07-01",
+        "predicted": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q1",
+        "query_type": "current",
+        "question": "当前有明确依据的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q2",
+        "query_type": "original",
+        "question": "最早记录的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q1",
+        "query_type": "current",
+        "question": "当前有明确依据的补充协议状态是什么？",
+        "answer": "未确认存在",
+        "predicted": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q2",
+        "query_type": "original",
+        "question": "最初记录的补充协议状态是什么？",
+        "answer": "未确认存在",
+        "predicted": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款本金是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q2",
+        "query_type": "current",
+        "question": "当前记录的律师费是多少？",
+        "answer": "8000",
+        "predicted": "8000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q1",
+        "query_type": "current",
+        "question": "合同签订日期是哪天？",
+        "answer": "2025-01-01",
+        "predicted": "2025-01-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q2",
+        "query_type": "current",
+        "question": "约定付款日期是哪天？",
+        "answer": "2025-03-01",
+        "predicted": "2025-03-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款金额是多少？",
+        "answer": "30000",
+        "predicted": "30000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q2",
+        "query_type": "current",
+        "question": "当前记录的租房押金是多少？",
+        "answer": "30000",
+        "predicted": "30000",
+        "correct": true
+      }
+    ]
+  },
+  "append_only": {
+    "overall_accuracy": 0.7272727272727273,
+    "by_query_type": {
+      "at_time": {
+        "correct": 1,
+        "total": 5,
+        "accuracy": 0.2
+      },
+      "current": {
+        "correct": 20,
+        "total": 28,
+        "accuracy": 0.7142857142857143
+      },
+      "original": {
+        "correct": 11,
+        "total": 11,
+        "accuracy": 1.0
+      }
+    },
+    "details": [
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q1",
+        "query_type": "current",
+        "question": "当前剩余欠款是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q2",
+        "query_type": "at_time",
+        "question": "截至2025年2月1日，记录的借款金额是多少？",
+        "answer": "80000",
+        "predicted": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q3",
+        "query_type": "original",
+        "question": "最初陈述的借款金额是多少？",
+        "answer": "80000",
+        "predicted": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q1",
+        "query_type": "current",
+        "question": "当前确认的合同签署日期是哪天？",
+        "answer": "2024-06-15",
+        "predicted": "AMBIGUOUS[2024-06-01|2024-06-15]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q2",
+        "query_type": "original",
+        "question": "当事人最初陈述的签署日期是哪天？",
+        "answer": "2024-06-01",
+        "predicted": "2024-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q1",
+        "query_type": "current",
+        "question": "当前履行状态是什么？",
+        "answer": "已履行",
+        "predicted": "AMBIGUOUS[未履行|部分履行|已履行]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q2",
+        "query_type": "at_time",
+        "question": "2025年2月10日时履行状态是什么？",
+        "answer": "部分履行",
+        "predicted": "AMBIGUOUS[未履行|部分履行|已履行]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q3",
+        "query_type": "original",
+        "question": "最早记录的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q1",
+        "query_type": "current",
+        "question": "当事人当前主张的欠款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q2",
+        "query_type": "original",
+        "question": "当事人最初主张的欠款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款本金是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q2",
+        "query_type": "current",
+        "question": "目前记录的居住区域是什么？",
+        "answer": "A区",
+        "predicted": "A区",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q3",
+        "query_type": "current",
+        "question": "当前记录的合同总金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款金额是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q2",
+        "query_type": "current",
+        "question": "约定的还款日期是哪天？",
+        "answer": "2025-06-01",
+        "predicted": "2025-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q1",
+        "query_type": "current",
+        "question": "记录的入职日期是哪天？",
+        "answer": "2024-08-01",
+        "predicted": "2024-08-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q2",
+        "query_type": "current",
+        "question": "约定的月工资是多少？",
+        "answer": "9000",
+        "predicted": "9000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q1",
+        "query_type": "current",
+        "question": "当前记录的租房押金是多少？",
+        "answer": "6000",
+        "predicted": "6000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q2",
+        "query_type": "current",
+        "question": "当前记录的月租金是多少？",
+        "answer": "3000",
+        "predicted": "3000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q1",
+        "query_type": "current",
+        "question": "当前确认的借款金额是多少？",
+        "answer": "100000",
+        "predicted": "AMBIGUOUS[120000|100000]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q2",
+        "query_type": "original",
+        "question": "最初陈述的借款金额是多少？",
+        "answer": "120000",
+        "predicted": "120000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q1",
+        "query_type": "current",
+        "question": "当前记录的开庭日期是哪天？",
+        "answer": "2025-04-15",
+        "predicted": "AMBIGUOUS[2025-04-10|2025-04-15]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q2",
+        "query_type": "original",
+        "question": "最初陈述的开庭日期是哪天？",
+        "answer": "2025-04-10",
+        "predicted": "2025-04-10",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q1",
+        "query_type": "current",
+        "question": "当前确认的交付数量是多少？",
+        "answer": "800",
+        "predicted": "AMBIGUOUS[1000|800]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q2",
+        "query_type": "original",
+        "question": "最初陈述的交付数量是多少？",
+        "answer": "1000",
+        "predicted": "1000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q1",
+        "query_type": "current",
+        "question": "当前租赁状态是什么？",
+        "answer": "解除",
+        "predicted": "AMBIGUOUS[生效|解除]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q2",
+        "query_type": "at_time",
+        "question": "2025年4月1日时租赁状态是什么？",
+        "answer": "生效",
+        "predicted": "AMBIGUOUS[生效|解除]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q1",
+        "query_type": "current",
+        "question": "当前劳动关系状态是什么？",
+        "answer": "离职",
+        "predicted": "AMBIGUOUS[在职|离职]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q2",
+        "query_type": "at_time",
+        "question": "2025年1月1日时劳动关系状态是什么？",
+        "answer": "在职",
+        "predicted": "AMBIGUOUS[在职|离职]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q1",
+        "query_type": "current",
+        "question": "当前付款状态是什么？",
+        "answer": "全部付款",
+        "predicted": "AMBIGUOUS[未付款|部分付款|全部付款]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q2",
+        "query_type": "at_time",
+        "question": "2025年4月1日时付款状态是什么？",
+        "answer": "部分付款",
+        "predicted": "AMBIGUOUS[未付款|部分付款|全部付款]",
+        "correct": false
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q3",
+        "query_type": "original",
+        "question": "最早记录的付款状态是什么？",
+        "answer": "未付款",
+        "predicted": "未付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q1",
+        "query_type": "current",
+        "question": "当前明确记录的合同日期是哪天？",
+        "answer": "2024-07-01",
+        "predicted": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q2",
+        "query_type": "original",
+        "question": "当事人最初陈述的合同日期是哪天？",
+        "answer": "2024-07-01",
+        "predicted": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q1",
+        "query_type": "current",
+        "question": "当前有明确依据的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q2",
+        "query_type": "original",
+        "question": "最早记录的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q1",
+        "query_type": "current",
+        "question": "当前有明确依据的补充协议状态是什么？",
+        "answer": "未确认存在",
+        "predicted": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q2",
+        "query_type": "original",
+        "question": "最初记录的补充协议状态是什么？",
+        "answer": "未确认存在",
+        "predicted": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款本金是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q2",
+        "query_type": "current",
+        "question": "当前记录的律师费是多少？",
+        "answer": "8000",
+        "predicted": "8000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q1",
+        "query_type": "current",
+        "question": "合同签订日期是哪天？",
+        "answer": "2025-01-01",
+        "predicted": "2025-01-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q2",
+        "query_type": "current",
+        "question": "约定付款日期是哪天？",
+        "answer": "2025-03-01",
+        "predicted": "2025-03-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款金额是多少？",
+        "answer": "30000",
+        "predicted": "30000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q2",
+        "query_type": "current",
+        "question": "当前记录的租房押金是多少？",
+        "answer": "30000",
+        "predicted": "30000",
+        "correct": true
+      }
+    ]
+  },
+  "versioned": {
+    "overall_accuracy": 1.0,
+    "by_query_type": {
+      "at_time": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "current": {
+        "correct": 28,
+        "total": 28,
+        "accuracy": 1.0
+      },
+      "original": {
+        "correct": 11,
+        "total": 11,
+        "accuracy": 1.0
+      }
+    },
+    "details": [
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q1",
+        "query_type": "current",
+        "question": "当前剩余欠款是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q2",
+        "query_type": "at_time",
+        "question": "截至2025年2月1日，记录的借款金额是多少？",
+        "answer": "80000",
+        "predicted": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q3",
+        "query_type": "original",
+        "question": "最初陈述的借款金额是多少？",
+        "answer": "80000",
+        "predicted": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q1",
+        "query_type": "current",
+        "question": "当前确认的合同签署日期是哪天？",
+        "answer": "2024-06-15",
+        "predicted": "2024-06-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q2",
+        "query_type": "original",
+        "question": "当事人最初陈述的签署日期是哪天？",
+        "answer": "2024-06-01",
+        "predicted": "2024-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q1",
+        "query_type": "current",
+        "question": "当前履行状态是什么？",
+        "answer": "已履行",
+        "predicted": "已履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q2",
+        "query_type": "at_time",
+        "question": "2025年2月10日时履行状态是什么？",
+        "answer": "部分履行",
+        "predicted": "部分履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q3",
+        "query_type": "original",
+        "question": "最早记录的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q1",
+        "query_type": "current",
+        "question": "当事人当前主张的欠款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q2",
+        "query_type": "original",
+        "question": "当事人最初主张的欠款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款本金是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q2",
+        "query_type": "current",
+        "question": "目前记录的居住区域是什么？",
+        "answer": "A区",
+        "predicted": "A区",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q3",
+        "query_type": "current",
+        "question": "当前记录的合同总金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款金额是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q2",
+        "query_type": "current",
+        "question": "约定的还款日期是哪天？",
+        "answer": "2025-06-01",
+        "predicted": "2025-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q1",
+        "query_type": "current",
+        "question": "记录的入职日期是哪天？",
+        "answer": "2024-08-01",
+        "predicted": "2024-08-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q2",
+        "query_type": "current",
+        "question": "约定的月工资是多少？",
+        "answer": "9000",
+        "predicted": "9000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q1",
+        "query_type": "current",
+        "question": "当前记录的租房押金是多少？",
+        "answer": "6000",
+        "predicted": "6000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q2",
+        "query_type": "current",
+        "question": "当前记录的月租金是多少？",
+        "answer": "3000",
+        "predicted": "3000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q1",
+        "query_type": "current",
+        "question": "当前确认的借款金额是多少？",
+        "answer": "100000",
+        "predicted": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q2",
+        "query_type": "original",
+        "question": "最初陈述的借款金额是多少？",
+        "answer": "120000",
+        "predicted": "120000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q1",
+        "query_type": "current",
+        "question": "当前记录的开庭日期是哪天？",
+        "answer": "2025-04-15",
+        "predicted": "2025-04-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q2",
+        "query_type": "original",
+        "question": "最初陈述的开庭日期是哪天？",
+        "answer": "2025-04-10",
+        "predicted": "2025-04-10",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q1",
+        "query_type": "current",
+        "question": "当前确认的交付数量是多少？",
+        "answer": "800",
+        "predicted": "800",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q2",
+        "query_type": "original",
+        "question": "最初陈述的交付数量是多少？",
+        "answer": "1000",
+        "predicted": "1000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q1",
+        "query_type": "current",
+        "question": "当前租赁状态是什么？",
+        "answer": "解除",
+        "predicted": "解除",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q2",
+        "query_type": "at_time",
+        "question": "2025年4月1日时租赁状态是什么？",
+        "answer": "生效",
+        "predicted": "生效",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q1",
+        "query_type": "current",
+        "question": "当前劳动关系状态是什么？",
+        "answer": "离职",
+        "predicted": "离职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q2",
+        "query_type": "at_time",
+        "question": "2025年1月1日时劳动关系状态是什么？",
+        "answer": "在职",
+        "predicted": "在职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q1",
+        "query_type": "current",
+        "question": "当前付款状态是什么？",
+        "answer": "全部付款",
+        "predicted": "全部付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q2",
+        "query_type": "at_time",
+        "question": "2025年4月1日时付款状态是什么？",
+        "answer": "部分付款",
+        "predicted": "部分付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q3",
+        "query_type": "original",
+        "question": "最早记录的付款状态是什么？",
+        "answer": "未付款",
+        "predicted": "未付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q1",
+        "query_type": "current",
+        "question": "当前明确记录的合同日期是哪天？",
+        "answer": "2024-07-01",
+        "predicted": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q2",
+        "query_type": "original",
+        "question": "当事人最初陈述的合同日期是哪天？",
+        "answer": "2024-07-01",
+        "predicted": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q1",
+        "query_type": "current",
+        "question": "当前有明确依据的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q2",
+        "query_type": "original",
+        "question": "最早记录的履行状态是什么？",
+        "answer": "未履行",
+        "predicted": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q1",
+        "query_type": "current",
+        "question": "当前有明确依据的补充协议状态是什么？",
+        "answer": "未确认存在",
+        "predicted": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q2",
+        "query_type": "original",
+        "question": "最初记录的补充协议状态是什么？",
+        "answer": "未确认存在",
+        "predicted": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款本金是多少？",
+        "answer": "50000",
+        "predicted": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q2",
+        "query_type": "current",
+        "question": "当前记录的律师费是多少？",
+        "answer": "8000",
+        "predicted": "8000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q1",
+        "query_type": "current",
+        "question": "合同签订日期是哪天？",
+        "answer": "2025-01-01",
+        "predicted": "2025-01-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q2",
+        "query_type": "current",
+        "question": "约定付款日期是哪天？",
+        "answer": "2025-03-01",
+        "predicted": "2025-03-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q1",
+        "query_type": "current",
+        "question": "当前记录的借款金额是多少？",
+        "answer": "30000",
+        "predicted": "30000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q2",
+        "query_type": "current",
+        "question": "当前记录的租房押金是多少？",
+        "answer": "30000",
+        "predicted": "30000",
+        "correct": true
+      }
+    ]
+  }
+}

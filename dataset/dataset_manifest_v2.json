@@ -1,0 +1,12 @@
+{
+  "dataset_version": "v2_frozen",
+  "freeze_date": "2026-11-11",
+  "case_count": 20,
+  "event_count": 44,
+  "query_count": 44,
+  "human_review_result": "pass",
+  "human_review_scope": "all_20_cases",
+  "source_file": "D:\\Projects\\J1Bench\\experiments\\03_controlled_memory\\dataset\\controlled_cases_v1_fixed.jsonl",
+  "frozen_file": "outputs\\controlled_cases_v2_frozen.jsonl",
+  "frozen_file_sha256": "304d96421439c89108c5565c1aa3bbca4b0ca97013b7b4529135a99e58d8dabe"
+}

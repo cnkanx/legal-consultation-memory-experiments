@@ -1,0 +1,7 @@
+method,event_source,strict_accuracy,normalized_accuracy,current_accuracy,at_time_accuracy,original_accuracy,note
+latest_overwrite,oracle,0.7727,0.7727,1.0000,0.2000,0.4545,只保留最新值
+append_only,oracle,0.7273,0.7273,0.7143,0.2000,1.0000,保存所有值但不解决冲突
+mem0,oracle,0.9091,0.9545,0.9286,1.0000,1.0000,当地Qdrant与BGE中文嵌入
+mem0,deepseek,0.7500,0.9091,0.8929,0.8000,1.0000,端到端自动抽取
+versioned,oracle,1.0000,1.0000,1.0000,1.0000,1.0000,机制验证上界
+versioned,deepseek,0.7727,0.9318,0.9286,0.8000,1.0000,端到端自动抽取

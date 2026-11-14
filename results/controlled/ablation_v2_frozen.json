@@ -1,0 +1,1510 @@
+{
+  "versioned_full": {
+    "use_event_types": true,
+    "use_version_chain": true,
+    "use_query_routing": true,
+    "overall_accuracy": 1.0,
+    "by_query_type": {
+      "at_time": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "current": {
+        "correct": 28,
+        "total": 28,
+        "accuracy": 1.0
+      },
+      "original": {
+        "correct": 11,
+        "total": 11,
+        "accuracy": 1.0
+      }
+    },
+    "details": [
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q2",
+        "query_type": "at_time",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q3",
+        "query_type": "original",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q1",
+        "query_type": "current",
+        "answer": "2024-06-15",
+        "actual": "2024-06-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q2",
+        "query_type": "original",
+        "answer": "2024-06-01",
+        "actual": "2024-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q1",
+        "query_type": "current",
+        "answer": "已履行",
+        "actual": "已履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q2",
+        "query_type": "at_time",
+        "answer": "部分履行",
+        "actual": "部分履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q3",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q2",
+        "query_type": "original",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q2",
+        "query_type": "current",
+        "answer": "A区",
+        "actual": "A区",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q3",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q2",
+        "query_type": "current",
+        "answer": "2025-06-01",
+        "actual": "2025-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q1",
+        "query_type": "current",
+        "answer": "2024-08-01",
+        "actual": "2024-08-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q2",
+        "query_type": "current",
+        "answer": "9000",
+        "actual": "9000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q1",
+        "query_type": "current",
+        "answer": "6000",
+        "actual": "6000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q2",
+        "query_type": "current",
+        "answer": "3000",
+        "actual": "3000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q2",
+        "query_type": "original",
+        "answer": "120000",
+        "actual": "120000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q1",
+        "query_type": "current",
+        "answer": "2025-04-15",
+        "actual": "2025-04-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q2",
+        "query_type": "original",
+        "answer": "2025-04-10",
+        "actual": "2025-04-10",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q1",
+        "query_type": "current",
+        "answer": "800",
+        "actual": "800",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q2",
+        "query_type": "original",
+        "answer": "1000",
+        "actual": "1000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q1",
+        "query_type": "current",
+        "answer": "解除",
+        "actual": "解除",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q2",
+        "query_type": "at_time",
+        "answer": "生效",
+        "actual": "生效",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q1",
+        "query_type": "current",
+        "answer": "离职",
+        "actual": "离职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q2",
+        "query_type": "at_time",
+        "answer": "在职",
+        "actual": "在职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q1",
+        "query_type": "current",
+        "answer": "全部付款",
+        "actual": "全部付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q2",
+        "query_type": "at_time",
+        "answer": "部分付款",
+        "actual": "部分付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q3",
+        "query_type": "original",
+        "answer": "未付款",
+        "actual": "未付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q1",
+        "query_type": "current",
+        "answer": "2024-07-01",
+        "actual": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q2",
+        "query_type": "original",
+        "answer": "2024-07-01",
+        "actual": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q1",
+        "query_type": "current",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q2",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q1",
+        "query_type": "current",
+        "answer": "未确认存在",
+        "actual": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q2",
+        "query_type": "original",
+        "answer": "未确认存在",
+        "actual": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q2",
+        "query_type": "current",
+        "answer": "8000",
+        "actual": "8000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q1",
+        "query_type": "current",
+        "answer": "2025-01-01",
+        "actual": "2025-01-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q2",
+        "query_type": "current",
+        "answer": "2025-03-01",
+        "actual": "2025-03-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q1",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q2",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      }
+    ]
+  },
+  "no_event_types": {
+    "use_event_types": false,
+    "use_version_chain": true,
+    "use_query_routing": true,
+    "overall_accuracy": 0.9090909090909091,
+    "by_query_type": {
+      "at_time": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "current": {
+        "correct": 24,
+        "total": 28,
+        "accuracy": 0.8571428571428571
+      },
+      "original": {
+        "correct": 11,
+        "total": 11,
+        "accuracy": 1.0
+      }
+    },
+    "details": [
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q2",
+        "query_type": "at_time",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q3",
+        "query_type": "original",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q1",
+        "query_type": "current",
+        "answer": "2024-06-15",
+        "actual": "2024-06-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q2",
+        "query_type": "original",
+        "answer": "2024-06-01",
+        "actual": "2024-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q1",
+        "query_type": "current",
+        "answer": "已履行",
+        "actual": "已履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q2",
+        "query_type": "at_time",
+        "answer": "部分履行",
+        "actual": "部分履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q3",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "80000",
+        "correct": false
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q2",
+        "query_type": "original",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q2",
+        "query_type": "current",
+        "answer": "A区",
+        "actual": "A区",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q3",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q2",
+        "query_type": "current",
+        "answer": "2025-06-01",
+        "actual": "2025-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q1",
+        "query_type": "current",
+        "answer": "2024-08-01",
+        "actual": "2024-08-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q2",
+        "query_type": "current",
+        "answer": "9000",
+        "actual": "9000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q1",
+        "query_type": "current",
+        "answer": "6000",
+        "actual": "6000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q2",
+        "query_type": "current",
+        "answer": "3000",
+        "actual": "3000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q2",
+        "query_type": "original",
+        "answer": "120000",
+        "actual": "120000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q1",
+        "query_type": "current",
+        "answer": "2025-04-15",
+        "actual": "2025-04-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q2",
+        "query_type": "original",
+        "answer": "2025-04-10",
+        "actual": "2025-04-10",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q1",
+        "query_type": "current",
+        "answer": "800",
+        "actual": "800",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q2",
+        "query_type": "original",
+        "answer": "1000",
+        "actual": "1000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q1",
+        "query_type": "current",
+        "answer": "解除",
+        "actual": "解除",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q2",
+        "query_type": "at_time",
+        "answer": "生效",
+        "actual": "生效",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q1",
+        "query_type": "current",
+        "answer": "离职",
+        "actual": "离职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q2",
+        "query_type": "at_time",
+        "answer": "在职",
+        "actual": "在职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q1",
+        "query_type": "current",
+        "answer": "全部付款",
+        "actual": "全部付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q2",
+        "query_type": "at_time",
+        "answer": "部分付款",
+        "actual": "部分付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q3",
+        "query_type": "original",
+        "answer": "未付款",
+        "actual": "未付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q1",
+        "query_type": "current",
+        "answer": "2024-07-01",
+        "actual": "2024-07-05",
+        "correct": false
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q2",
+        "query_type": "original",
+        "answer": "2024-07-01",
+        "actual": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q1",
+        "query_type": "current",
+        "answer": "未履行",
+        "actual": "可能已履行",
+        "correct": false
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q2",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q1",
+        "query_type": "current",
+        "answer": "未确认存在",
+        "actual": "可能存在",
+        "correct": false
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q2",
+        "query_type": "original",
+        "answer": "未确认存在",
+        "actual": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q2",
+        "query_type": "current",
+        "answer": "8000",
+        "actual": "8000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q1",
+        "query_type": "current",
+        "answer": "2025-01-01",
+        "actual": "2025-01-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q2",
+        "query_type": "current",
+        "answer": "2025-03-01",
+        "actual": "2025-03-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q1",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q2",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      }
+    ]
+  },
+  "no_version_chain": {
+    "use_event_types": true,
+    "use_version_chain": false,
+    "use_query_routing": true,
+    "overall_accuracy": 1.0,
+    "by_query_type": {
+      "at_time": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "current": {
+        "correct": 28,
+        "total": 28,
+        "accuracy": 1.0
+      },
+      "original": {
+        "correct": 11,
+        "total": 11,
+        "accuracy": 1.0
+      }
+    },
+    "details": [
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q2",
+        "query_type": "at_time",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q3",
+        "query_type": "original",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q1",
+        "query_type": "current",
+        "answer": "2024-06-15",
+        "actual": "2024-06-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q2",
+        "query_type": "original",
+        "answer": "2024-06-01",
+        "actual": "2024-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q1",
+        "query_type": "current",
+        "answer": "已履行",
+        "actual": "已履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q2",
+        "query_type": "at_time",
+        "answer": "部分履行",
+        "actual": "部分履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q3",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q2",
+        "query_type": "original",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q2",
+        "query_type": "current",
+        "answer": "A区",
+        "actual": "A区",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q3",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q2",
+        "query_type": "current",
+        "answer": "2025-06-01",
+        "actual": "2025-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q1",
+        "query_type": "current",
+        "answer": "2024-08-01",
+        "actual": "2024-08-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q2",
+        "query_type": "current",
+        "answer": "9000",
+        "actual": "9000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q1",
+        "query_type": "current",
+        "answer": "6000",
+        "actual": "6000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q2",
+        "query_type": "current",
+        "answer": "3000",
+        "actual": "3000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q2",
+        "query_type": "original",
+        "answer": "120000",
+        "actual": "120000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q1",
+        "query_type": "current",
+        "answer": "2025-04-15",
+        "actual": "2025-04-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q2",
+        "query_type": "original",
+        "answer": "2025-04-10",
+        "actual": "2025-04-10",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q1",
+        "query_type": "current",
+        "answer": "800",
+        "actual": "800",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q2",
+        "query_type": "original",
+        "answer": "1000",
+        "actual": "1000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q1",
+        "query_type": "current",
+        "answer": "解除",
+        "actual": "解除",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q2",
+        "query_type": "at_time",
+        "answer": "生效",
+        "actual": "生效",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q1",
+        "query_type": "current",
+        "answer": "离职",
+        "actual": "离职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q2",
+        "query_type": "at_time",
+        "answer": "在职",
+        "actual": "在职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q1",
+        "query_type": "current",
+        "answer": "全部付款",
+        "actual": "全部付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q2",
+        "query_type": "at_time",
+        "answer": "部分付款",
+        "actual": "部分付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q3",
+        "query_type": "original",
+        "answer": "未付款",
+        "actual": "未付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q1",
+        "query_type": "current",
+        "answer": "2024-07-01",
+        "actual": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q2",
+        "query_type": "original",
+        "answer": "2024-07-01",
+        "actual": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q1",
+        "query_type": "current",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q2",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q1",
+        "query_type": "current",
+        "answer": "未确认存在",
+        "actual": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q2",
+        "query_type": "original",
+        "answer": "未确认存在",
+        "actual": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q2",
+        "query_type": "current",
+        "answer": "8000",
+        "actual": "8000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q1",
+        "query_type": "current",
+        "answer": "2025-01-01",
+        "actual": "2025-01-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q2",
+        "query_type": "current",
+        "answer": "2025-03-01",
+        "actual": "2025-03-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q1",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q2",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      }
+    ]
+  },
+  "no_query_routing": {
+    "use_event_types": true,
+    "use_version_chain": true,
+    "use_query_routing": false,
+    "overall_accuracy": 0.9090909090909091,
+    "by_query_type": {
+      "at_time": {
+        "correct": 1,
+        "total": 5,
+        "accuracy": 0.2
+      },
+      "current": {
+        "correct": 28,
+        "total": 28,
+        "accuracy": 1.0
+      },
+      "original": {
+        "correct": 11,
+        "total": 11,
+        "accuracy": 1.0
+      }
+    },
+    "details": [
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q2",
+        "query_type": "at_time",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-001",
+        "query_id": "CM-001-Q3",
+        "query_type": "original",
+        "answer": "80000",
+        "actual": "80000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q1",
+        "query_type": "current",
+        "answer": "2024-06-15",
+        "actual": "2024-06-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-002",
+        "query_id": "CM-002-Q2",
+        "query_type": "original",
+        "answer": "2024-06-01",
+        "actual": "2024-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q1",
+        "query_type": "current",
+        "answer": "已履行",
+        "actual": "已履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q2",
+        "query_type": "at_time",
+        "answer": "部分履行",
+        "actual": "已履行",
+        "correct": false
+      },
+      {
+        "case_id": "CM-003",
+        "query_id": "CM-003-Q3",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-004",
+        "query_id": "CM-004-Q2",
+        "query_type": "original",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q2",
+        "query_type": "current",
+        "answer": "A区",
+        "actual": "A区",
+        "correct": true
+      },
+      {
+        "case_id": "CM-005",
+        "query_id": "CM-005-Q3",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-006",
+        "query_id": "CM-006-Q2",
+        "query_type": "current",
+        "answer": "2025-06-01",
+        "actual": "2025-06-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q1",
+        "query_type": "current",
+        "answer": "2024-08-01",
+        "actual": "2024-08-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-007",
+        "query_id": "CM-007-Q2",
+        "query_type": "current",
+        "answer": "9000",
+        "actual": "9000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q1",
+        "query_type": "current",
+        "answer": "6000",
+        "actual": "6000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-008",
+        "query_id": "CM-008-Q2",
+        "query_type": "current",
+        "answer": "3000",
+        "actual": "3000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q1",
+        "query_type": "current",
+        "answer": "100000",
+        "actual": "100000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-009",
+        "query_id": "CM-009-Q2",
+        "query_type": "original",
+        "answer": "120000",
+        "actual": "120000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q1",
+        "query_type": "current",
+        "answer": "2025-04-15",
+        "actual": "2025-04-15",
+        "correct": true
+      },
+      {
+        "case_id": "CM-010",
+        "query_id": "CM-010-Q2",
+        "query_type": "original",
+        "answer": "2025-04-10",
+        "actual": "2025-04-10",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q1",
+        "query_type": "current",
+        "answer": "800",
+        "actual": "800",
+        "correct": true
+      },
+      {
+        "case_id": "CM-011",
+        "query_id": "CM-011-Q2",
+        "query_type": "original",
+        "answer": "1000",
+        "actual": "1000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q1",
+        "query_type": "current",
+        "answer": "解除",
+        "actual": "解除",
+        "correct": true
+      },
+      {
+        "case_id": "CM-012",
+        "query_id": "CM-012-Q2",
+        "query_type": "at_time",
+        "answer": "生效",
+        "actual": "解除",
+        "correct": false
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q1",
+        "query_type": "current",
+        "answer": "离职",
+        "actual": "离职",
+        "correct": true
+      },
+      {
+        "case_id": "CM-013",
+        "query_id": "CM-013-Q2",
+        "query_type": "at_time",
+        "answer": "在职",
+        "actual": "离职",
+        "correct": false
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q1",
+        "query_type": "current",
+        "answer": "全部付款",
+        "actual": "全部付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q2",
+        "query_type": "at_time",
+        "answer": "部分付款",
+        "actual": "全部付款",
+        "correct": false
+      },
+      {
+        "case_id": "CM-014",
+        "query_id": "CM-014-Q3",
+        "query_type": "original",
+        "answer": "未付款",
+        "actual": "未付款",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q1",
+        "query_type": "current",
+        "answer": "2024-07-01",
+        "actual": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-015",
+        "query_id": "CM-015-Q2",
+        "query_type": "original",
+        "answer": "2024-07-01",
+        "actual": "2024-07-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q1",
+        "query_type": "current",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-016",
+        "query_id": "CM-016-Q2",
+        "query_type": "original",
+        "answer": "未履行",
+        "actual": "未履行",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q1",
+        "query_type": "current",
+        "answer": "未确认存在",
+        "actual": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-017",
+        "query_id": "CM-017-Q2",
+        "query_type": "original",
+        "answer": "未确认存在",
+        "actual": "未确认存在",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q1",
+        "query_type": "current",
+        "answer": "50000",
+        "actual": "50000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-018",
+        "query_id": "CM-018-Q2",
+        "query_type": "current",
+        "answer": "8000",
+        "actual": "8000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q1",
+        "query_type": "current",
+        "answer": "2025-01-01",
+        "actual": "2025-01-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-019",
+        "query_id": "CM-019-Q2",
+        "query_type": "current",
+        "answer": "2025-03-01",
+        "actual": "2025-03-01",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q1",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      },
+      {
+        "case_id": "CM-020",
+        "query_id": "CM-020-Q2",
+        "query_type": "current",
+        "answer": "30000",
+        "actual": "30000",
+        "correct": true
+      }
+    ]
+  }
+}
